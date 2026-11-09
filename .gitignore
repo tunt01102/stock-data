@@ -1,0 +1,8 @@
+# build output (the ZIP is published as a GitHub Release asset, not committed)
+dist/
+# local / secret
+app/data/settings.json
+*.tmp
+.DS_Store
+__pycache__/
+*.pyc

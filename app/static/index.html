@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phân tích BĐS HOSE</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%232a78d6%22/%3E%3Cpath d=%22M3 12l3-4 3 2 4-6%22 stroke=%22white%22 stroke-width=%221.6%22 fill=%22none%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="vendor/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">▦</span>
+    <div><b data-i18n="app_title">Phân tích 55 cổ phiếu BĐS sàn HOSE</b>
+      <div class="sub" data-i18n="app_sub">Dữ liệu từ 2018 · dùng cho học tập</div></div>
+  </div>
+  <div class="actions">
+    <button id="btnRefresh" class="primary" data-i18n="refresh">⟳ Làm mới dữ liệu</button>
+    <select id="langSel" aria-label="Language"><option value="vi">Tiếng Việt</option><option value="en">English</option></select>
+    <button id="btnTheme" title="Sáng/Tối" aria-label="theme">◐</button>
+  </div>
+</header>
+
+<div id="freshBanner" class="banner hidden" role="alert"></div>
+<div id="jobBar" class="jobbar hidden">
+  <div class="jobtext"><span id="jobText"></span> <a href="#" id="jobDetails" data-i18n="details">chi tiết</a></div>
+  <div class="progress"><div id="jobProg"></div></div>
+  <pre id="jobLog" class="hidden"></pre>
+</div>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="overview" class="active" data-i18n="tab_overview">Tổng quan</button>
+  <button data-tab="stock" data-i18n="tab_stock">Phân tích mã</button>
+  <button data-tab="compare" data-i18n="tab_compare">So sánh</button>
+  <button data-tab="macro" data-i18n="tab_macro">Vĩ mô</button>
+  <button data-tab="download" data-i18n="tab_download">Tải dữ liệu</button>
+  <button data-tab="settings" data-i18n="tab_settings">Cài đặt</button>
+  <button data-tab="glossary" data-i18n="tab_glossary">Giải thích chỉ số</button>
+</nav>
+
+<main>
+  <!-- ============ OVERVIEW ============ -->
+  <section id="tab-overview" class="tab active">
+    <div class="cards" id="ovCards"></div>
+    <div class="toolbar">
+      <input id="ovSearch" type="search" data-i18n-ph="search_ph" placeholder="Tìm mã hoặc tên…">
+      <select id="ovGroup"></select>
+      <label class="chk"><input type="checkbox" id="ovHideVic"> <span data-i18n="hide_vic">Ẩn VIC (sheet ghi "k chọn")</span></label>
+      <span class="colpick"><button id="ovColsBtn" data-i18n="cols_btn">☰ Chọn cột hiển thị</button>
+        <div id="ovColsPanel" class="colpanel hidden"></div></span>
+    </div>
+    <div class="note" data-i18n-html="ov_note"></div>
+    <div class="tablewrap"><table id="ovTable" class="grid"></table></div>
+    <div id="dataIssues" class="note warn"></div>
+  </section>
+
+  <!-- ============ STOCK ============ -->
+  <section id="tab-stock" class="tab">
+    <div class="toolbar">
+      <select id="stSel"></select>
+      <span class="seg" id="stRange">
+        <button data-r="63">3T</button><button data-r="126">6T</button><button data-r="252">1N</button>
+        <button data-r="756">3N</button><button data-r="0" class="on" data-i18n="all">Tất cả</button>
+      </span>
+      <label class="chk"><input type="checkbox" id="stRaw"> <span data-i18n="show_raw">Hiện giá gốc (chưa điều chỉnh)</span></label>
+    </div>
+    <div id="stHead"></div>
+    <div class="cards" id="stCards"></div>
+    <div class="panel"><h3 data-i18n="chart_price">Giá đóng cửa và đường trung bình động</h3>
+      <div class="chartbox tall"><canvas id="cPrice"></canvas></div>
+      <p class="caption" data-i18n="cap_price"></p></div>
+    <div class="row2">
+      <div class="panel"><h3 data-i18n="chart_volume">Khối lượng khớp lệnh</h3><div class="chartbox"><canvas id="cVol"></canvas></div></div>
+      <div class="panel"><h3 data-i18n="chart_vs_index">So với VN-Index (cùng gốc = 100)</h3><div class="chartbox"><canvas id="cRel"></canvas></div>
+        <p class="caption" data-i18n="cap_rel"></p></div>
+    </div>
+    <h2 data-i18n="fund_title">Chỉ số tài chính theo quý (theo các cột trong file Excel)</h2>
+    <div id="fundNote" class="note"></div>
+    <div class="fundgrid" id="fundCharts"></div>
+    <details class="panel"><summary data-i18n="fund_table">Bảng số liệu theo quý</summary><div class="tablewrap"><table id="fundTable" class="grid small"></table></div></details>
+    <details class="panel" id="xcPanel"><summary data-i18n="xcheck_title">Đối chiếu chéo nguồn dữ liệu</summary><div id="xcBody"></div></details>
+    <div class="panel ai hidden" id="stAI"><h3 data-i18n="ai_title">Hỏi AI về mã này</h3>
+      <textarea id="stAIq" rows="2" data-i18n-ph="ai_ph_stock"></textarea>
+      <button class="primary" id="stAIbtn" data-i18n="ai_ask">Hỏi AI</button><div class="aians" id="stAIans"></div></div>
+  </section>
+
+  <!-- ============ COMPARE ============ -->
+  <section id="tab-compare" class="tab">
+    <div class="toolbar">
+      <span data-i18n="cmp_pick">Chọn tối đa 8 mã để so sánh:</span>
+      <select id="cmpGroup"></select>
+      <span class="seg" id="cmpRange">
+        <button data-r="252">1N</button><button data-r="756">3N</button><button data-r="0" class="on" data-i18n="all">Tất cả</button>
+      </span>
+    </div>
+    <div class="chips" id="cmpChips"></div>
+    <div class="panel"><h3 data-i18n="cmp_chart">Tăng/giảm giá (gốc = 100 tại ngày đầu của khoảng chọn)</h3>
+      <div class="chartbox tall"><canvas id="cCmp"></canvas></div><p class="caption" data-i18n="cap_cmp"></p></div>
+    <div class="tablewrap"><table id="cmpTable" class="grid"></table></div>
+  </section>
+
+  <!-- ============ MACRO ============ -->
+  <section id="tab-macro" class="tab">
+    <div id="macroBanner"></div>
+    <div class="note" data-i18n-html="macro_note"></div>
+    <div class="macrogrid" id="macroGrid"></div>
+    <div class="panel"><h3 data-i18n="legal_title">Quy định pháp luật về bất động sản (từ 2018)</h3>
+      <div class="tablewrap"><table id="legalTable" class="grid"></table></div></div>
+    <div class="panel ai hidden" id="mAI"><h3 data-i18n="ai_title_macro">Hỏi AI về vĩ mô</h3>
+      <textarea id="mAIq" rows="2" data-i18n-ph="ai_ph_macro"></textarea>
+      <button class="primary" id="mAIbtn" data-i18n="ai_ask">Hỏi AI</button><div class="aians" id="mAIans"></div></div>
+  </section>
+
+  <!-- ============ DOWNLOAD ============ -->
+  <section id="tab-download" class="tab">
+    <div class="panel">
+      <h3 data-i18n="dl_title">Tải dữ liệu CSV</h3>
+      <p data-i18n-html="dl_intro"></p>
+      <div class="toolbar">
+        <label><span data-i18n="dl_kind">Loại dữ liệu</span>
+          <select id="dlKind"><option value="prices" data-i18n="dl_prices">Giá hằng ngày</option>
+            <option value="fundamentals" data-i18n="dl_fund">Chỉ số tài chính theo quý</option>
+            <option value="both" data-i18n="dl_both">Cả hai</option></select></label>
+        <button data-sel="all" data-i18n="dl_sel_all">Chọn tất cả 55 mã</button>
+        <button data-sel="none" data-i18n="dl_sel_none">Bỏ chọn</button>
+        <span id="dlGroups"></span>
+      </div>
+      <div class="chips" id="dlChips"></div>
+      <p><button class="primary" id="dlBtn" data-i18n="dl_btn">⬇ Tải các mã đã chọn</button> <span id="dlCount"></span></p>
+      <hr>
+      <p><button id="dlMacro" data-i18n="dl_macro">⬇ Tải toàn bộ dữ liệu vĩ mô (ZIP)</button>
+         <button id="dlIndex" data-i18n="dl_index">⬇ Tải VN-Index (CSV)</button></p>
+      <p class="note" data-i18n-html="dl_folder"></p>
+    </div>
+  </section>
+
+  <!-- ============ SETTINGS ============ -->
+  <section id="tab-settings" class="tab">
+    <div class="panel">
+      <h3 data-i18n="set_ai">Trợ lý AI (không bắt buộc)</h3>
+      <p data-i18n-html="set_ai_intro"></p>
+      <div id="setProviders"></div>
+      <label><span data-i18n="set_default">AI mặc định</span> <select id="setProvider"></select></label>
+      <p><button class="primary" id="setSave" data-i18n="save">Lưu</button> <button id="setTest" data-i18n="test_ai">Thử kết nối AI</button> <span id="setMsg"></span></p>
+    </div>
+    <div class="panel"><h3 data-i18n="set_about">Thông tin</h3><div id="setAbout"></div></div>
+  </section>
+
+  <!-- ============ GLOSSARY ============ -->
+  <section id="tab-glossary" class="tab"><div id="glossary"></div></section>
+</main>
+
+<footer data-i18n-html="footer"></footer>
+<div id="tip" class="tip hidden"></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

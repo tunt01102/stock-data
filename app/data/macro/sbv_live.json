@@ -1,0 +1,17 @@
+{
+ "rates": {
+  "rediscount_rate": 3.0,
+  "decision": "1123/QĐ-NHNN",
+  "refinancing_rate": 4.5,
+  "interbank_date": "2026-11-06",
+  "interbank_overnight": 6.07
+ },
+ "fx": {
+  "date": "2026-11-09",
+  "central_rate": 25610.0,
+  "notice": "464/TB-NHNN"
+ },
+ "fetched_at": "2026-11-10T00:23:26",
+ "rates_url": "https://www.sbv.gov.vn/vi/l%C3%A3i-su%E1%BA%A5t1",
+ "fx_url": "https://www.sbv.gov.vn/vi/t%E1%BB%B7-gi%C3%A1"
+}

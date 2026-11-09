@@ -1,0 +1,53 @@
+{
+ "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=VN",
+ "rows": {
+  "2018": {
+   "year": "2018",
+   "worldbank": 3.54,
+   "imf_avg": 3.54,
+   "status": "OK"
+  },
+  "2019": {
+   "year": "2019",
+   "worldbank": 2.8,
+   "imf_avg": 2.8,
+   "status": "OK"
+  },
+  "2020": {
+   "year": "2020",
+   "worldbank": 3.22,
+   "imf_avg": 3.22,
+   "status": "OK"
+  },
+  "2021": {
+   "year": "2021",
+   "worldbank": 1.83,
+   "imf_avg": 1.83,
+   "status": "OK"
+  },
+  "2022": {
+   "year": "2022",
+   "worldbank": 3.16,
+   "imf_avg": 3.16,
+   "status": "OK"
+  },
+  "2023": {
+   "year": "2023",
+   "worldbank": 3.25,
+   "imf_avg": 3.25,
+   "status": "OK"
+  },
+  "2024": {
+   "year": "2024",
+   "worldbank": 3.62,
+   "imf_avg": 3.62,
+   "status": "OK"
+  },
+  "2025": {
+   "year": "2025",
+   "worldbank": 3.31,
+   "imf_avg": 3.31,
+   "status": "OK"
+  }
+ }
+}

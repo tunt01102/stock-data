@@ -1,0 +1,9 @@
+period,value,unit,source,source_url,xcheck_value,xcheck_source,xcheck
+2018,7.465,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,7.08,Thông cáo NSO (thủ công),LECH
+2019,7.3593,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,7.02,Thông cáo NSO (thủ công),LECH
+2020,2.8654,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,2.91,Thông cáo NSO (thủ công),OK
+2021,2.5537,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,2.58,Thông cáo NSO (thủ công),OK
+2022,8.5375,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,8.02,Thông cáo NSO (thủ công),LECH
+2023,4.9787,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,5.05,Thông cáo NSO (thủ công),OK
+2024,7.0396,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,7.09,Thông cáo NSO (thủ công),OK
+2025,8.0188,% tăng trưởng thực,World Bank (số liệu gốc: NSO),https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=VN,8.02,Thông cáo NSO (thủ công),OK

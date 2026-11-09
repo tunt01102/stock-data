@@ -1,0 +1,442 @@
+[
+ {
+  "stt": 1,
+  "ticker": "VIC",
+  "name": "Tập đoàn Vingroup",
+  "segment": "Tập đoàn đa ngành, bất động sản",
+  "listed": "2007-09-19",
+  "note": "k chọn, vì này là cty mẹ rồi"
+ },
+ {
+  "stt": 2,
+  "ticker": "VHM",
+  "name": "CTCP Vinhomes",
+  "segment": "Bất động sản nhà ở, đô thị",
+  "listed": "2018-05-17",
+  "note": null
+ },
+ {
+  "stt": 3,
+  "ticker": "VRE",
+  "name": "CTCP Vincom Retail",
+  "segment": "Trung tâm thương mại",
+  "listed": "2017-11-06",
+  "note": null
+ },
+ {
+  "stt": 4,
+  "ticker": "KDH",
+  "name": "CTCP Đầu tư và Kinh doanh Nhà Khang Điền",
+  "segment": "Bất động sản nhà ở",
+  "listed": "2010-02-01",
+  "note": null
+ },
+ {
+  "stt": 5,
+  "ticker": "NLG",
+  "name": "CTCP Đầu tư Nam Long",
+  "segment": "Nhà ở, khu đô thị",
+  "listed": "2013-04-08",
+  "note": null
+ },
+ {
+  "stt": 6,
+  "ticker": "NVL",
+  "name": "CTCP Tập đoàn Đầu tư Địa ốc No Va",
+  "segment": "Bất động sản nhà ở, nghỉ dưỡng",
+  "listed": "2016-12-28",
+  "note": null
+ },
+ {
+  "stt": 7,
+  "ticker": "DXG",
+  "name": "CTCP Tập đoàn Đất Xanh",
+  "segment": "Phát triển bất động sản, dịch vụ",
+  "listed": "2009-12-22",
+  "note": null
+ },
+ {
+  "stt": 8,
+  "ticker": "DXS",
+  "name": "CTCP Dịch vụ Bất động sản Đất Xanh",
+  "segment": "Môi giới, dịch vụ bất động sản",
+  "listed": "2021-07-15",
+  "note": null
+ },
+ {
+  "stt": 9,
+  "ticker": "PDR",
+  "name": "CTCP Phát triển Bất động sản Phát Đạt",
+  "segment": "Phát triển dự án",
+  "listed": "2010-07-30",
+  "note": null
+ },
+ {
+  "stt": 10,
+  "ticker": "DIG",
+  "name": "Tổng CTCP Đầu tư Phát triển Xây dựng",
+  "segment": "Khu đô thị, bất động sản",
+  "listed": "2009-08-19",
+  "note": null
+ },
+ {
+  "stt": 11,
+  "ticker": "HDG",
+  "name": "CTCP Tập đoàn Hà Đô",
+  "segment": "Bất động sản, năng lượng",
+  "listed": "2010-02-02",
+  "note": null
+ },
+ {
+  "stt": 12,
+  "ticker": "AGG",
+  "name": "CTCP Đầu tư và Phát triển Bất động sản An Gia",
+  "segment": "Bất động sản nhà ở",
+  "listed": "2020-01-09",
+  "note": null
+ },
+ {
+  "stt": 13,
+  "ticker": "CRE",
+  "name": "CTCP Bất động sản Thế Kỷ",
+  "segment": "Dịch vụ, môi giới bất động sản",
+  "listed": "2018-09-05",
+  "note": null
+ },
+ {
+  "stt": 14,
+  "ticker": "HDC",
+  "name": "CTCP Phát triển Nhà Bà Rịa – Vũng Tàu",
+  "segment": "Nhà ở, khu đô thị",
+  "listed": "2007-10-08",
+  "note": null
+ },
+ {
+  "stt": 15,
+  "ticker": "HQC",
+  "name": "CTCP Tư vấn – Thương mại – Dịch vụ Địa ốc Hoàng Quân",
+  "segment": "Nhà ở xã hội",
+  "listed": "2010-10-20",
+  "note": null
+ },
+ {
+  "stt": 16,
+  "ticker": "HPX",
+  "name": "CTCP Đầu tư Hải Phát",
+  "segment": "Phát triển dự án bất động sản",
+  "listed": "2018-07-24",
+  "note": null
+ },
+ {
+  "stt": 17,
+  "ticker": "QCG",
+  "name": "CTCP Quốc Cường Gia Lai",
+  "segment": "Bất động sản, phát triển dự án",
+  "listed": "2010-08-09",
+  "note": null
+ },
+ {
+  "stt": 18,
+  "ticker": "ITC",
+  "name": "CTCP Đầu tư và Kinh doanh Nhà",
+  "segment": "Bất động sản nhà ở",
+  "listed": "2009-10-19",
+  "note": null
+ },
+ {
+  "stt": 19,
+  "ticker": "SCR",
+  "name": "CTCP Địa ốc Sài Gòn Thương Tín",
+  "segment": "Bất động sản, khu đô thị",
+  "listed": "2016-11-18",
+  "note": null
+ },
+ {
+  "stt": 20,
+  "ticker": "SGR",
+  "name": "CTCP Địa ốc Sài Gòn",
+  "segment": "Phát triển bất động sản",
+  "listed": "2018-01-15",
+  "note": null
+ },
+ {
+  "stt": 21,
+  "ticker": "NTL",
+  "name": "CTCP Phát triển Đô thị Từ Liêm",
+  "segment": "Khu đô thị, nhà ở",
+  "listed": "2007-12-21",
+  "note": null
+ },
+ {
+  "stt": 22,
+  "ticker": "VPH",
+  "name": "CTCP Vạn Phát Hưng",
+  "segment": "Phát triển dự án bất động sản",
+  "listed": "2009-09-09",
+  "note": null
+ },
+ {
+  "stt": 23,
+  "ticker": "TDC",
+  "name": "CTCP Kinh doanh và Phát triển Bình Dương",
+  "segment": "Khu đô thị, nhà ở",
+  "listed": "2010-05-04",
+  "note": null
+ },
+ {
+  "stt": 24,
+  "ticker": "TDH",
+  "name": "CTCP Phát triển Nhà Thủ Đức",
+  "segment": "Bất động sản",
+  "listed": "2006-12-14",
+  "note": null
+ },
+ {
+  "stt": 25,
+  "ticker": "D2D",
+  "name": "CTCP Phát triển Đô thị Công nghiệp số 2",
+  "segment": "Khu công nghiệp, đô thị",
+  "listed": "2009-08-14",
+  "note": null
+ },
+ {
+  "stt": 26,
+  "ticker": "SZL",
+  "name": "CTCP Sonadezi Long Thành",
+  "segment": "Khu công nghiệp, bất động sản",
+  "listed": "2008-09-09",
+  "note": null
+ },
+ {
+  "stt": 27,
+  "ticker": "SZC",
+  "name": "CTCP Sonadezi Châu Đức",
+  "segment": "Khu công nghiệp, khu đô thị",
+  "listed": "2019-01-15",
+  "note": null
+ },
+ {
+  "stt": 28,
+  "ticker": "LHG",
+  "name": "CTCP Long Hậu",
+  "segment": "Khu công nghiệp",
+  "listed": "2010-03-23",
+  "note": null
+ },
+ {
+  "stt": 29,
+  "ticker": "KBC",
+  "name": "Tổng CTCP Phát triển Đô thị Kinh Bắc",
+  "segment": "Khu công nghiệp",
+  "listed": "2009-12-18",
+  "note": null
+ },
+ {
+  "stt": 30,
+  "ticker": "BCM",
+  "name": "Tổng Công ty Đầu tư và Phát triển Công nghiệp – CTCP",
+  "segment": "Khu công nghiệp, đô thị",
+  "listed": "2020-08-31",
+  "note": null
+ },
+ {
+  "stt": 31,
+  "ticker": "VPI",
+  "name": "CTCP Phát triển Bất động sản Văn Phú",
+  "segment": "Phát triển dự án, khu đô thị",
+  "listed": "2018-06-29",
+  "note": "được xác nhận giao dịch trên HOSE tại cafeF"
+ },
+ {
+  "stt": 32,
+  "ticker": "CII",
+  "name": "CTCP Đầu tư Hạ tầng Kỹ thuật TP.HCM",
+  "segment": "Hạ tầng, bất động sản",
+  "listed": "2006-05-18",
+  "note": "hoạt động đa ngành"
+ },
+ {
+  "stt": 33,
+  "ticker": "NHA",
+  "name": "Tổng CTCP Đầu tư Phát triển Nhà và Đô thị Nam Hà Nội",
+  "segment": "Khu đô thị, xây dựng",
+  "listed": "2021-01-21",
+  "note": null
+ },
+ {
+  "stt": 34,
+  "ticker": "FIR",
+  "name": "CTCP Địa ốc First Real",
+  "segment": "Phát triển và môi giới bất động sản",
+  "listed": "2018-10-18",
+  "note": null
+ },
+ {
+  "stt": 35,
+  "ticker": "CKG",
+  "name": "CTCP Tập đoàn CIC",
+  "segment": "Đầu tư, phát triển bất động sản",
+  "listed": "2020-03-25",
+  "note": null
+ },
+ {
+  "stt": 36,
+  "ticker": "CCL",
+  "name": "CTCP Đầu tư và Phát triển Đô thị Dầu khí Cửu Long",
+  "segment": "Khu đô thi, nhà ở",
+  "listed": "2011-03-03",
+  "note": null
+ },
+ {
+  "stt": 37,
+  "ticker": "DRH",
+  "name": "CTCP DRH Holdings",
+  "segment": "Phát triển BĐS",
+  "listed": "2010-07-26",
+  "note": null
+ },
+ {
+  "stt": 38,
+  "ticker": "DTA",
+  "name": "CTCP Đệ Tam",
+  "segment": "Đầu tư khu đô thị",
+  "listed": "2010-07-16",
+  "note": null
+ },
+ {
+  "stt": 39,
+  "ticker": "FDC",
+  "name": "CTCP Ngoại thương và Phát triển Đầu tư TP.HCM",
+  "segment": "Bất động sản, đầu tư",
+  "listed": "2010-01-18",
+  "note": null
+ },
+ {
+  "stt": 40,
+  "ticker": "FIT",
+  "name": "CTCP Tập đoàn F.I.T",
+  "segment": "Đầu tư đa ngành",
+  "listed": "2015-08-19",
+  "note": null
+ },
+ {
+  "stt": 41,
+  "ticker": "HAR",
+  "name": "CTCP Đầu tư Thương mại Bất động sản An Dương Thảo Điền",
+  "segment": "BĐS",
+  "listed": "2013-01-17",
+  "note": null
+ },
+ {
+  "stt": 42,
+  "ticker": "IJC",
+  "name": "CTCP Phát triển Hạ tầng Kỹ thuật",
+  "segment": "Hạ tầng, bất động sản",
+  "listed": "2010-04-19",
+  "note": null
+ },
+ {
+  "stt": 43,
+  "ticker": "LEC",
+  "name": "CTCP Bất động sản Điện lực Miền Trung",
+  "segment": "BĐS",
+  "listed": "2025-05-13",
+  "note": null
+ },
+ {
+  "stt": 44,
+  "ticker": "LGL",
+  "name": "CTCP Đầu tư và Phát triển Đô thị Long Giang",
+  "segment": "Phát triển đô thị",
+  "listed": "2009-10-08",
+  "note": null
+ },
+ {
+  "stt": 45,
+  "ticker": "NBB",
+  "name": null,
+  "segment": "BĐS, khu dân cư",
+  "listed": "2009-02-18",
+  "note": null
+ },
+ {
+  "stt": 46,
+  "ticker": "NVT",
+  "name": "CTCP Đầu tư Năm Bảy Bảy",
+  "segment": "BĐS nghỉ dưỡng",
+  "listed": "2010-05-07",
+  "note": null
+ },
+ {
+  "stt": 47,
+  "ticker": "OGC",
+  "name": "CTCP Tập đoàn Đại Dương",
+  "segment": "Đầu tư, BĐS",
+  "listed": "2010-05-04",
+  "note": null
+ },
+ {
+  "stt": 48,
+  "ticker": "SJS",
+  "name": "CTCP SJ Group",
+  "segment": "Phát triển đô thị",
+  "listed": "2006-07-06",
+  "note": null
+ },
+ {
+  "stt": 49,
+  "ticker": "SIP",
+  "name": "CTCP Đầu tư Sài Gòn VRG",
+  "segment": "khu công nghiệp",
+  "listed": "2023-08-08",
+  "note": null
+ },
+ {
+  "stt": 50,
+  "ticker": "TCH",
+  "name": "CTCP Đầu tư Dịch vụ Tài chính Hoàng Huy",
+  "segment": "Bất động sản, ô tô",
+  "listed": "2016-10-05",
+  "note": null
+ },
+ {
+  "stt": 51,
+  "ticker": "TIP",
+  "name": "CTCP Phát triển Khu công nghiệp Tín Nghĩa",
+  "segment": "KCN",
+  "listed": "2016-06-06",
+  "note": null
+ },
+ {
+  "stt": 52,
+  "ticker": "TIX",
+  "name": "CTCP Đầu tư và Phát triển Tân Bình",
+  "segment": "BĐS, KCN",
+  "listed": "2009-11-25",
+  "note": null
+ },
+ {
+  "stt": 53,
+  "ticker": "UIC",
+  "name": "CTCP Đầu tư Phát triển Nhà và Đô thị IDICO",
+  "segment": "Nhà ở, đô thị",
+  "listed": "2007-11-12",
+  "note": null
+ },
+ {
+  "stt": 54,
+  "ticker": "NTC",
+  "name": "CTCP Khu công nghiệp Nam Tân Uyên",
+  "segment": "KCN",
+  "listed": "2025-10-28",
+  "note": null
+ },
+ {
+  "stt": 55,
+  "ticker": "KHG",
+  "name": "CTCP Tập đoàn Khải Hoàn Land",
+  "segment": "Môi giới, phát triển bất động sản",
+  "listed": "2021-07-19",
+  "note": null
+ }
+]

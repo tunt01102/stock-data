@@ -1,0 +1,307 @@
+{
+  "as_of": "2026-11-09",
+  "note": "Vietnam real GDP growth, % year-on-year (constant prices), as first published in the GSO/NSO (Tổng cục Thống kê / Cục Thống kê, nso.gov.vn) quarterly socio-economic press release for each quarter; full-year rows ('2018' etc.) are the estimate in that year's Q4/full-year release. Exceptions: 2018-Q2 taken from the 6-month 2018 press release; 2020-Q2 from the GSO press-conference article for Q2/6M 2020 (the standalone press-release URL returns 404). All URLs fetched 2026-11-09 with a browser User-Agent and returned HTTP 200; each figure was matched against the page text. First releases were later revised, as shown in subsequent GSO releases, e.g.: 2018-Q1 7.38->7.45, 2018-Q2 6.79->6.73; 2019-Q1 6.79->6.82, 2019-Q3 7.31->7.48; 2020-Q1 3.82->3.68; 2021-Q1 4.48->4.72; 2022-Q2 7.72->7.99 (later 8.56), 2022-Q3 13.67->14.38; 2023-Q1/Q2/Q3 3.32/4.14/5.33 -> 3.41/4.25/5.47 (Q4/2023 release); 2024-Q1/Q2/Q3 5.66/6.93/7.40 -> 5.98/7.25/7.43 (Q4/2024 release); 2025-Q1/Q2/Q3 6.93/7.96/8.23 -> 7.05/8.16/8.25 (Q4/2025 release; Q1/2025 later cited as 7.07); 2026-Q1/Q2 7.83/8.39 -> 8.15/8.81 (Q3/2026 release). Full-year figures are also preliminary estimates and may have been revised in later yearbooks (e.g. after the 2019 GDP rebasing/re-assessment of scale). For a consistent revised series use the latest GSO release or statistical yearbook instead.",
+  "rows": [
+    {
+      "period": "2018-Q1",
+      "gdp_yoy_pct": 7.38,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2018 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/04/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2018/",
+      "http_status": 200
+    },
+    {
+      "period": "2018-Q2",
+      "gdp_yoy_pct": 6.79,
+      "source_title": "THÔNG CÁO BÁO CHÍ VỀ TÌNH HÌNH KINH TẾ – XÃ HỘI 6 THÁNG ĐẦU NĂM 2018 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/04/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-6-thang-dau-nam-2018/",
+      "http_status": 200
+    },
+    {
+      "period": "2018-Q3",
+      "gdp_yoy_pct": 6.88,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý III và 9 tháng năm 2018 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/04/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2018/",
+      "http_status": 200
+    },
+    {
+      "period": "2018-Q4",
+      "gdp_yoy_pct": 7.31,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2018 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/10/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2018-2/",
+      "http_status": 200
+    },
+    {
+      "period": "2018",
+      "gdp_yoy_pct": 7.08,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2018 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/10/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2018-2/",
+      "http_status": 200
+    },
+    {
+      "period": "2019-Q1",
+      "gdp_yoy_pct": 6.79,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý I năm 2019 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/05/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2019/",
+      "http_status": 200
+    },
+    {
+      "period": "2019-Q2",
+      "gdp_yoy_pct": 6.71,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và 6 tháng năm 2019 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/10/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-6-thang-dau-nam-2019/",
+      "http_status": 200
+    },
+    {
+      "period": "2019-Q3",
+      "gdp_yoy_pct": 7.31,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý III và 9 tháng năm 2019 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/10/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2019/",
+      "http_status": 200
+    },
+    {
+      "period": "2019-Q4",
+      "gdp_yoy_pct": 6.97,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2019 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2019/",
+      "http_status": 200
+    },
+    {
+      "period": "2019",
+      "gdp_yoy_pct": 7.02,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2019 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2019/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2019/",
+      "http_status": 200
+    },
+    {
+      "period": "2020-Q1",
+      "gdp_yoy_pct": 3.82,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý I năm 2020 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2020/03/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2020/",
+      "http_status": 200
+    },
+    {
+      "period": "2020-Q2",
+      "gdp_yoy_pct": 0.36,
+      "source_title": "Không tìm thấy trang này – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2020/06/tong-cuc-thong-ke-hop-bao-cong-bo-so-lieu-thong-ke-kinh-te-xa-hoi-quy-ii-va-6-thang-dau-nam-2020/",
+      "http_status": 200
+    },
+    {
+      "period": "2020-Q3",
+      "gdp_yoy_pct": 2.62,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2020 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2020/09/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2020/",
+      "http_status": 200
+    },
+    {
+      "period": "2020-Q4",
+      "gdp_yoy_pct": 4.48,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2020 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2020/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2020/",
+      "http_status": 200
+    },
+    {
+      "period": "2020",
+      "gdp_yoy_pct": 2.91,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2020 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2020/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2020/",
+      "http_status": 200
+    },
+    {
+      "period": "2021-Q1",
+      "gdp_yoy_pct": 4.48,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý I năm 2021 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2021/03/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2021/",
+      "http_status": 200
+    },
+    {
+      "period": "2021-Q2",
+      "gdp_yoy_pct": 6.61,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và 6 tháng đầu năm 2021 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2021/06/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-6-thang-dau-nam-2021/",
+      "http_status": 200
+    },
+    {
+      "period": "2021-Q3",
+      "gdp_yoy_pct": -6.17,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2021 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2021/09/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2021/",
+      "http_status": 200
+    },
+    {
+      "period": "2021-Q4",
+      "gdp_yoy_pct": 5.22,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2021 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2021/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2021/",
+      "http_status": 200
+    },
+    {
+      "period": "2021",
+      "gdp_yoy_pct": 2.58,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2021 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2021/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2021/",
+      "http_status": 200
+    },
+    {
+      "period": "2022-Q1",
+      "gdp_yoy_pct": 5.03,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2022 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2022/03/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2022/",
+      "http_status": 200
+    },
+    {
+      "period": "2022-Q2",
+      "gdp_yoy_pct": 7.72,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và 6 tháng đầu năm 2022 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2022/06/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-6-thang-dau-nam-2022/",
+      "http_status": 200
+    },
+    {
+      "period": "2022-Q3",
+      "gdp_yoy_pct": 13.67,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2022 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2022/09/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2022/",
+      "http_status": 200
+    },
+    {
+      "period": "2022-Q4",
+      "gdp_yoy_pct": 5.92,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2022 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2022/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2022/",
+      "http_status": 200
+    },
+    {
+      "period": "2022",
+      "gdp_yoy_pct": 8.02,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2022 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2022/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2022/",
+      "http_status": 200
+    },
+    {
+      "period": "2023-Q1",
+      "gdp_yoy_pct": 3.32,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2023 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2023/03/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2023/",
+      "http_status": 200
+    },
+    {
+      "period": "2023-Q2",
+      "gdp_yoy_pct": 4.14,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và 6 tháng đầu năm 2023 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2023/06/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-6-thang-dau-nam-2023/",
+      "http_status": 200
+    },
+    {
+      "period": "2023-Q3",
+      "gdp_yoy_pct": 5.33,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2023 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2023/09/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2023/",
+      "http_status": 200
+    },
+    {
+      "period": "2023-Q4",
+      "gdp_yoy_pct": 6.72,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2023 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2023/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2023/",
+      "http_status": 200
+    },
+    {
+      "period": "2023",
+      "gdp_yoy_pct": 5.05,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý IV và năm 2023 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2023/12/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2023/",
+      "http_status": 200
+    },
+    {
+      "period": "2024-Q1",
+      "gdp_yoy_pct": 5.66,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2024 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/tin-tuc-thong-ke/2024/03/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2024/",
+      "http_status": 200
+    },
+    {
+      "period": "2024-Q2",
+      "gdp_yoy_pct": 6.93,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và sáu tháng đầu năm 2024 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2024/06/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-sau-thang-dau-nam-2024/",
+      "http_status": 200
+    },
+    {
+      "period": "2024-Q3",
+      "gdp_yoy_pct": 7.4,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2024 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2024/10/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2024/",
+      "http_status": 200
+    },
+    {
+      "period": "2024-Q4",
+      "gdp_yoy_pct": 7.55,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý IV và năm 2024 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2024/",
+      "http_status": 200
+    },
+    {
+      "period": "2024",
+      "gdp_yoy_pct": 7.09,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý IV và năm 2024 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2024/",
+      "http_status": 200
+    },
+    {
+      "period": "2025-Q1",
+      "gdp_yoy_pct": 6.93,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2025 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/04/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2025/",
+      "http_status": 200
+    },
+    {
+      "period": "2025-Q2",
+      "gdp_yoy_pct": 7.96,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và sáu tháng đầu năm 2025 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/07/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-sau-thang-dau-nam-2025/",
+      "http_status": 200
+    },
+    {
+      "period": "2025-Q3",
+      "gdp_yoy_pct": 8.23,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2025 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/10/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2025/",
+      "http_status": 200
+    },
+    {
+      "period": "2025-Q4",
+      "gdp_yoy_pct": 8.46,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý IV và năm 2025 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2025/",
+      "http_status": 200
+    },
+    {
+      "period": "2025",
+      "gdp_yoy_pct": 8.02,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý IV và năm 2025 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2025/",
+      "http_status": 200
+    },
+    {
+      "period": "2026-Q1",
+      "gdp_yoy_pct": 7.83,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý I năm 2026 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/04/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-i-nam-2026/",
+      "http_status": 200
+    },
+    {
+      "period": "2026-Q2",
+      "gdp_yoy_pct": 8.39,
+      "source_title": "Thông cáo báo chí về tình hình kinh tế – xã hội quý II và sáu tháng đầu năm 2026 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/07/thong-cao-bao-chi-ve-tinh-hinh-kinh-te-xa-hoi-quy-ii-va-sau-thang-dau-nam-2026/",
+      "http_status": 200
+    },
+    {
+      "period": "2026-Q3",
+      "gdp_yoy_pct": 9.95,
+      "source_title": "Thông cáo báo chí tình hình kinh tế – xã hội quý III và 9 tháng năm 2026 – General Statistics Office of Vietnam",
+      "source_url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/10/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iii-va-9-thang-nam-2026/",
+      "http_status": 200
+    }
+  ]
+}

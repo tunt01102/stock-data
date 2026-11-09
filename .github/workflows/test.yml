@@ -1,0 +1,115 @@
+name: Test standalone package (Windows + macOS)
+
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  standalone:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            py: dist\BDS-HOSE-App\runtime\windows-x64\python\python.exe
+          - os: macos-latest
+            py: dist/BDS-HOSE-App/runtime/mac-arm64/python/bin/python3
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the no-install package
+        run: python tools/build_dist.py
+
+      - name: Unit tests with the BUNDLED Python (not the runner's)
+        working-directory: dist/BDS-HOSE-App/app
+        shell: bash
+        run: |
+          PY="$GITHUB_WORKSPACE/${{ matrix.py }}"
+          "$PY" -c "import sys, ssl; print(sys.executable, sys.version, ssl.OPENSSL_VERSION)"
+          "$PY" -m unittest discover -s tests -v
+
+      - name: Start the app with the double-click launcher (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $env:BDS_NO_BROWSER = "1"
+          Start-Process -FilePath "cmd.exe" -ArgumentList '/c', '"dist\BDS-HOSE-App\Mo ung dung (Windows).bat" > launcher.log 2>&1' -WindowStyle Hidden
+
+      - name: Start the app with the double-click launcher (macOS)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          BDS_NO_BROWSER=1 nohup bash "dist/BDS-HOSE-App/Mo ung dung (Mac).command" > launcher.log 2>&1 &
+
+      - name: Smoke test the running app (auto-refresh, APIs, downloads)
+        shell: bash
+        run: |
+          set -e
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:8686/api/status >/dev/null && break; sleep 2; done
+          curl -sf http://127.0.0.1:8686/ | grep -q "<title>"
+          # wait for the background refresh that runs on start-up (real internet)
+          for i in $(seq 1 300); do
+            curl -s http://127.0.0.1:8686/api/job | grep -q '"running": false' && break; sleep 3; done
+          curl -s http://127.0.0.1:8686/api/job > job.json; cat job.json | head -c 3000; echo
+          curl -sf http://127.0.0.1:8686/api/status | tee status.json; echo
+          curl -sf http://127.0.0.1:8686/api/overview -o overview.json
+          curl -sf http://127.0.0.1:8686/api/stock/KDH -o kdh.json
+          curl -sf http://127.0.0.1:8686/api/macro -o macro.json
+          curl -sf "http://127.0.0.1:8686/api/download?kind=prices&tickers=KDH" -o kdh.csv
+          curl -sf "http://127.0.0.1:8686/api/download?kind=both&tickers=ALL" -o all.zip
+          curl -sf "http://127.0.0.1:8686/api/download?kind=macro" -o macro.zip
+          python - <<'EOF'
+          import json, zipfile
+          ov = json.load(open("overview.json", encoding="utf-8"))
+          assert len(ov["tickers"]) == 55, len(ov["tickers"])
+          assert ov["fresh"]["data_last"], "no price data"
+          k = json.load(open("kdh.json", encoding="utf-8"))
+          assert len(k["prices"]["date"]) > 2000
+          m = json.load(open("macro.json", encoding="utf-8"))
+          print("macro status:", {n: v["ok"] for n, v in m["status"].items()})
+          assert open("kdh.csv", encoding="utf-8-sig").readline().startswith("date,open")
+          names = zipfile.ZipFile("all.zip").namelist()
+          assert "_tong_hop_gia.csv" in names and len(names) > 100, len(names)
+          assert len(zipfile.ZipFile("macro.zip").namelist()) > 5
+          job = json.load(open("job.json", encoding="utf-8"))
+          print("refresh errors:", job.get("errors"))
+          print("OK: app runs from the standalone package on this OS")
+          EOF
+
+      - name: Launcher log
+        if: always()
+        shell: bash
+        run: cat launcher.log || true
+
+      - name: Upload the package
+        if: runner.os == 'Windows'
+        uses: actions/upload-artifact@v4
+        with:
+          name: BDS-HOSE-App
+          path: dist/BDS-HOSE-App.zip
+          retention-days: 30
+
+  release:
+    # Publish the ZIP on the Releases page when a version tag (v1.0.0, ...) is pushed,
+    # only after the Windows and macOS tests passed.
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: standalone
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: python3 tools/build_dist.py
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/BDS-HOSE-App.zip \
+            --title "BDS-HOSE-App $GITHUB_REF_NAME" \
+            --notes "Tải file BDS-HOSE-App.zip bên dưới, giải nén và làm theo README (mục 1–2). Đã kiểm thử tự động trên Windows và macOS."

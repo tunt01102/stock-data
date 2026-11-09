@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-11-09",
+  "note": "Lịch sử lãi suất tái cấp vốn và tái chiết khấu của NHNN (đơn vị %/năm), mỗi dòng là một lần điều chỉnh. Hàng đầu tiên (10/7/2017) là mức đang áp dụng vào ngày 2018-01-01. Từ 10/7/2017 đến 16/9/2019 và từ 1/10/2020 đến 23/9/2022 không có điều chỉnh nào. Lãi suất tái chiết khấu không phải lúc nào cũng đổi cùng ngày với tái cấp vốn: nó giảm riêng ngày 15/3/2023 (QĐ 313), giữ nguyên ngày 3/4/2023 và 25/5/2023. Trang chính thức của NHNN (https://www.sbv.gov.vn/vi/lãi-suất1, HTTP 200 khi kiểm tra ngày 2026-11-09, dữ liệu liên ngân hàng ngày 06/11/2026) vẫn ghi tái cấp vốn 4,500% và tái chiết khấu 3,000% theo QĐ 1123/QĐ-NHNN ngày 16/06/2023, tức là đến tháng 11/2026 không có lần điều chỉnh nào sau 19/6/2023. Lưu ý: trang NHNN đó ghi 'Ngày áp dụng 19/03/2023', có vẻ là lỗi đánh máy của 19/06/2023. Phần lớn nguồn là Tạp chí Thị trường Tài chính Tiền tệ (cơ quan báo chí của NHNN) hoặc trang văn bản pháp luật; mỗi URL đã được tải lại và đối chiếu số liệu ngày 2026-11-09. Trường official_url (thêm ngày 2026-11-10) trỏ tới trang chính thức của Nhà nước đưa tin/công bố quyết định: chủ yếu baochinhphu.vn (Cổng TTĐT Chính phủ), riêng 15/3/2023 là thông cáo trên sbv.gov.vn; đã kiểm tra HTTP 200 và trang có nêu số quyết định/mức lãi suất. Các QĐ lãi suất điều hành của NHNN không đăng trên Công báo (tra api-searchcongbao không thấy). official_url = null cho 25/5/2023 (QĐ 950/QĐ-NHNN) vì không tìm được trang chính thức đã xác minh; source_url vẫn giữ làm liên kết phụ.",
+  "rows": [
+    {
+      "effective_date": "2017-07-10",
+      "refinancing_rate": 6.25,
+      "rediscount_rate": 4.25,
+      "decision": "Quyết định số 1424/QĐ-NHNN",
+      "source_title": "Quyết định 1424/QĐ-NHNN ngày 07/07/2017 (toàn văn, caselaw.vn)",
+      "source_url": "https://caselaw.vn/van-ban-phap-luat/312896-quyet-dinh-1424-qd-nhnn-nam-2017-ve-lai-suat-tai-cap-von-lai-suat-tai-chiet-khau-lai-suat-cho-vay-qua-dem-trong-thanh-toan-dien-tu-lien-ngan-hang-va-cho-vay-bu-dap-thieu-hut-von-trong-thanh-toan-bu-tru-cua-ngan-hang-nha-nuoc-viet-nam-doi-voi-cac-ngan-hang",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/nhnn-giam-lai-suat-dieu-hanh-cho-vay-102223681.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2019-09-16",
+      "refinancing_rate": 6.0,
+      "rediscount_rate": 4.0,
+      "decision": "Quyết định số 1870/QĐ-NHNN",
+      "source_title": "Điều chỉnh giảm lãi suất điều hành của Ngân hàng Nhà nước Việt Nam (Thị trường Tài chính Tiền tệ, 13/09/2019)",
+      "source_url": "https://thitruongtaichinhtiente.vn/dieu-chinh-giam-lai-suat-dieu-hanh-cua-ngan-hang-nha-nuoc-viet-nam-23961.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/nhnn-thong-bao-giam-lai-suat-dieu-hanh-tu-16-9-102261301.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2020-03-17",
+      "refinancing_rate": 5.0,
+      "rediscount_rate": 3.5,
+      "decision": "Quyết định số 418/QĐ-NHNN",
+      "source_title": "Tổng hợp các mức lãi suất ngân hàng từ 17/3/2020 (LuatVietnam)",
+      "source_url": "https://luatvietnam.vn/tin-van-ban-moi/tong-hop-cac-muc-lai-suat-ngan-hang-tu-17-3-2020-186-24256-article.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/giam-hang-loat-lai-suat-dieu-hanh-tu-ngay-17-3-102269631.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2020-05-13",
+      "refinancing_rate": 4.5,
+      "rediscount_rate": 3.0,
+      "decision": "Quyết định số 918/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước Việt Nam cắt giảm một loạt lãi suất điều hành (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-viet-nam-cat-giam-mot-loat-lai-suat-dieu-hanh-27593.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/tiep-tuc-ha-lai-suat-dieu-hanh-102272508.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2020-10-01",
+      "refinancing_rate": 4.0,
+      "rediscount_rate": 2.5,
+      "decision": "Quyết định số 1728/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước điều chỉnh giảm một loạt lãi suất điều hành (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-dieu-chinh-giam-mot-loat-lai-suat-dieu-hanh-29067.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/ngan-hang-nha-nuoc-giam-lai-suat-dieu-hanh-lan-thu-3-trong-nam-102279877.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2022-09-23",
+      "refinancing_rate": 5.0,
+      "rediscount_rate": 3.5,
+      "decision": "Quyết định số 1606/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước tăng mạnh nhiều loại lãi suất từ 23/9/2022 (LuatVietnam)",
+      "source_url": "https://luatvietnam.vn/tin-van-ban-moi/ngan-hang-nha-nuoc-tang-manh-nhieu-loai-lai-suat-tu-ngay-mai-186-91504-article.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/ngan-hang-nha-nuoc-dieu-chinh-mot-so-muc-lai-suat-tu-ngay-23-9-102220922175228897.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2022-10-25",
+      "refinancing_rate": 6.0,
+      "rediscount_rate": 4.5,
+      "decision": "Quyết định số 1809/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước tăng lãi suất điều hành, lãi suất tiền gửi ngắn hạn, lãi suất cho vay ngắn hạn (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-tang-lai-suat-dieu-hanh-lai-suat-tien-gui-ngan-han-lai-suat-cho-vay-ngan-han-42827.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/ngan-hang-nha-nuoc-viet-nam-dieu-chinh-cac-muc-lai-suat-dieu-hanh-102221024210117723.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2023-03-15",
+      "refinancing_rate": 6.0,
+      "rediscount_rate": 3.5,
+      "decision": "Quyết định số 313/QĐ-NHNN",
+      "source_title": "Lãi suất điều hành và lãi suất cho vay ngắn hạn đồng loạt giảm (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/lai-suat-dieu-hanh-va-lai-suat-cho-vay-ngan-han-dong-loat-giam-44710.html",
+      "http_status": 200,
+      "official_url": "https://www.sbv.gov.vn/en/web/sbv_portal/w/sbv564625",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2023-04-03",
+      "refinancing_rate": 5.5,
+      "rediscount_rate": 3.5,
+      "decision": "Quyết định số 574/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước Việt Nam tiếp tục giảm các mức lãi suất điều hành (Thời báo Tài chính Việt Nam)",
+      "source_url": "https://thoibaotaichinhvietnam.vn/ngan-hang-nha-nuoc-viet-nam-tiep-tuc-giam-cac-muc-lai-suat-dieu-hanh-124793.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/ngan-hang-nha-nuoc-tiep-tuc-giam-lai-suat-dieu-hanh-tu-thang-4-102230331211602337.htm",
+      "official_http_status": 200
+    },
+    {
+      "effective_date": "2023-05-25",
+      "refinancing_rate": 5.0,
+      "rediscount_rate": 3.5,
+      "decision": "Quyết định số 950/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước tiếp tục giảm một số lãi suất điều hành thêm 0,5% (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-tiep-tuc-giam-mot-so-lai-suat-dieu-hanh-them-0-5-46858.html",
+      "http_status": 200,
+      "official_url": null,
+      "official_http_status": null
+    },
+    {
+      "effective_date": "2023-06-19",
+      "refinancing_rate": 4.5,
+      "rediscount_rate": 3.0,
+      "decision": "Quyết định số 1123/QĐ-NHNN",
+      "source_title": "Ngân hàng Nhà nước tiếp tục giảm lãi suất điều hành để hỗ trợ doanh nghiệp và nền kinh tế (Thị trường Tài chính Tiền tệ)",
+      "source_url": "https://thitruongtaichinhtiente.vn/ngan-hang-nha-nuoc-tiep-tuc-giam-lai-suat-dieu-hanh-de-ho-tro-doanh-nghiep-va-nen-kinh-te-47287.html",
+      "http_status": 200,
+      "official_url": "https://baochinhphu.vn/ngan-hang-nha-nuoc-tiep-tuc-dieu-chinh-lai-suat-dieu-hanh-102230616132756661.htm",
+      "official_http_status": 200
+    }
+  ]
+}

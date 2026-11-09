@@ -1,0 +1,1589 @@
+{
+ "market": {
+  "last_date": "2026-11-09",
+  "ok": true,
+  "checked_at": "2026-11-09T23:37:39+07:00",
+  "errors": {}
+ },
+ "prices": {
+  "VIC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2195,
+    "mismatch": 12,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=1088350",
+     "2019-06-20 LECH: SSI KL=135220",
+     "2020-02-11 LECH: SSI KL=216470",
+     "2020-03-24 LECH: SSI KL=1408890",
+     "2020-04-27 LECH: SSI KL=405450"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:41+07:00"
+  },
+  "VHM": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-05-17",
+   "rows": 2120,
+   "added": 2120,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2120,
+    "ok": 2109,
+    "mismatch": 11,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=682890; SSI %ngày=0.55",
+     "2019-03-15 LECH: SSI %ngày=-1.27",
+     "2019-06-20 LECH: SSI KL=729570",
+     "2020-03-24 LECH: SSI KL=1927420",
+     "2020-04-27 LECH: SSI KL=1185590"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:43+07:00"
+  },
+  "VRE": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2190,
+    "mismatch": 17,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=4131680",
+     "2019-06-20 LECH: SSI KL=655520; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=0.88",
+     "2020-01-10 LECH: SSI %ngày=3.38",
+     "2020-01-15 LECH: SSI %ngày=-5.01"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:45+07:00"
+  },
+  "KDH": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2198,
+    "mismatch": 9,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=346820",
+     "2020-04-27 LECH: SSI KL=505810",
+     "2020-05-19 LECH: SSI KL=1247720; SSI %ngày=1.83",
+     "2020-05-20 LECH: SSI %ngày=0.00",
+     "2020-05-22 LECH: SSI KL=567110; SSI %ngày=-2.33"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:46+07:00"
+  },
+  "NLG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2195,
+    "mismatch": 12,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=1213740; VPS KL=1213740",
+     "2019-06-20 LECH: SSI KL=858190; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=1.65",
+     "2019-09-03 LECH: SSI %ngày=-8.17",
+     "2020-02-03 LECH: SSI KL=324580"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:48+07:00"
+  },
+  "NVL": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2197,
+    "mismatch": 10,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=345540; SSI %ngày=0.51",
+     "2019-03-15 LECH: SSI %ngày=-2.59",
+     "2019-06-20 LECH: SSI KL=374040",
+     "2020-02-03 LECH: SSI KL=574610; SSI %ngày=0.74",
+     "2020-02-04 LECH: SSI %ngày=-0.91"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:50+07:00"
+  },
+  "DXG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2198,
+    "mismatch": 9,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=884860",
+     "2019-06-20 LECH: SSI KL=652030; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=4.96",
+     "2020-02-07 LECH: SSI KL=4562030",
+     "2020-02-10 LECH: SSI KL=3491610"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:51+07:00"
+  },
+  "DXS": {
+   "last_date": "2026-11-09",
+   "first_date": "2021-07-15",
+   "rows": 1324,
+   "added": 1324,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1324,
+    "ok": 1323,
+    "mismatch": 1,
+    "examples": [
+     "2026-06-03 LECH: VPS KL=1327700"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:54+07:00"
+  },
+  "PDR": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2194,
+    "mismatch": 13,
+    "examples": [
+     "2019-03-14 LECH: SSI %ngày=1.20",
+     "2019-03-15 LECH: SSI %ngày=0.54",
+     "2019-06-20 LECH: SSI KL=735630; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=1.41",
+     "2020-03-12 LECH: SSI KL=160640"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:55+07:00"
+  },
+  "DIG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2193,
+    "mismatch": 14,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=920040",
+     "2019-06-20 LECH: SSI KL=228050",
+     "2020-02-05 LECH: SSI KL=1028260",
+     "2020-02-07 LECH: SSI KL=1070250",
+     "2020-02-10 LECH: SSI KL=989130"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:57+07:00"
+  },
+  "HDG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2197,
+    "mismatch": 10,
+    "examples": [
+     "2019-03-14 LECH: SSI %ngày=0.21",
+     "2019-06-20 LECH: SSI KL=171300; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=3.09",
+     "2019-11-25 LECH: SSI %ngày=-2.92",
+     "2019-11-26 LECH: SSI %ngày=2.28"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:37:59+07:00"
+  },
+  "AGG": {
+   "last_date": "2026-11-09",
+   "first_date": "2020-01-09",
+   "rows": 1704,
+   "added": 1704,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1704,
+    "ok": 1701,
+    "mismatch": 3,
+    "examples": [
+     "2020-04-27 LECH: SSI KL=202120",
+     "2022-09-12 LECH: VPS KL=123463",
+     "2023-01-19 LECH: VPS KL=9460"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:01+07:00"
+  },
+  "CRE": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-09-05",
+   "rows": 2042,
+   "added": 2042,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2042,
+    "ok": 2035,
+    "mismatch": 7,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=78970",
+     "2019-06-20 LECH: SSI KL=215150",
+     "2019-12-03 LECH: SSI KL=194330",
+     "2020-02-18 LECH: SSI KL=145150",
+     "2020-03-12 LECH: SSI %ngày=-0.88"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:02+07:00"
+  },
+  "HDC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2197,
+    "mismatch": 10,
+    "examples": [
+     "2019-03-14 LECH: VPS %ngày=1.90",
+     "2019-03-15 LECH: SSI %ngày=0.00; VPS %ngày=0.00",
+     "2019-06-20 LECH: SSI KL=254010; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=1.90",
+     "2020-03-02 LECH: SSI %ngày=-2.15"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:04+07:00"
+  },
+  "HQC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2202,
+    "mismatch": 5,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=3029030; SSI %ngày=2.72",
+     "2019-03-15 LECH: SSI %ngày=0.66",
+     "2019-06-20 LECH: SSI KL=3833370; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-0.71",
+     "2025-06-11 LECH: SSI KL=3173300"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:06+07:00"
+  },
+  "HPX": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-07-24",
+   "rows": 2072,
+   "added": 2072,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2072,
+    "ok": 2034,
+    "mismatch": 38,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=396180",
+     "2019-11-15 LECH: SSI %ngày=-5.47",
+     "2019-11-18 LECH: SSI %ngày=3.10",
+     "2019-11-19 LECH: SSI %ngày=-3.01",
+     "2019-11-20 LECH: SSI %ngày=3.10"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:07+07:00"
+  },
+  "QCG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2198,
+    "mismatch": 9,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=1330610",
+     "2019-06-20 LECH: SSI KL=113300; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-0.21",
+     "2020-04-09 LECH: SSI KL=450050; SSI %ngày=0.32",
+     "2020-04-10 LECH: SSI %ngày=-3.06"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:09+07:00"
+  },
+  "ITC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2194,
+    "mismatch": 13,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=132540",
+     "2020-01-02 LECH: SSI %ngày=-1.79",
+     "2020-01-03 LECH: SSI %ngày=2.40",
+     "2020-01-22 LECH: SSI %ngày=4.85",
+     "2020-01-30 LECH: SSI %ngày=-6.38"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:11+07:00"
+  },
+  "SCR": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2198,
+    "mismatch": 9,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=2737320",
+     "2019-06-20 LECH: SSI KL=1310860",
+     "2020-03-04 LECH: SSI %ngày=3.50",
+     "2020-04-09 LECH: SSI KL=2357440; SSI %ngày=-0.52",
+     "2020-04-10 LECH: SSI %ngày=-1.56"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:12+07:00"
+  },
+  "SGR": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2202,
+   "added": 2202,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2202,
+    "ok": 2182,
+    "mismatch": 20,
+    "examples": [
+     "2020-02-18 LECH: SSI KL=11760",
+     "2020-03-11 LECH: SSI %ngày=15.12",
+     "2020-04-29 LECH: SSI %ngày=2.62",
+     "2020-05-04 LECH: SSI %ngày=-8.81",
+     "2020-05-14 LECH: SSI %ngày=0.59"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:14+07:00"
+  },
+  "NTL": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2200,
+    "mismatch": 7,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=488690; SSI %ngày=5.12; VPS KL=488690; VPS %ngày=5.17",
+     "2019-03-15 LECH: SSI %ngày=0.00; VPS %ngày=0.00",
+     "2019-06-20 LECH: SSI KL=313980; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=0.00",
+     "2020-03-17 LECH: SSI %ngày=-5.22"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:16+07:00"
+  },
+  "VPH": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2179,
+    "mismatch": 28,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=70090; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-2.05",
+     "2019-11-27 LECH: SSI %ngày=0.00",
+     "2019-11-28 LECH: SSI %ngày=-2.93",
+     "2019-12-09 LECH: SSI %ngày=-2.99"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:17+07:00"
+  },
+  "TDC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2201,
+    "mismatch": 6,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=2710",
+     "2020-04-09 LECH: SSI KL=83630; SSI %ngày=2.64",
+     "2020-04-10 LECH: SSI %ngày=-1.84",
+     "2020-04-27 LECH: SSI KL=21870",
+     "2020-08-07 LECH: SSI KL=18950"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:19+07:00"
+  },
+  "TDH": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2199,
+    "mismatch": 8,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=316390; SSI %ngày=-0.51",
+     "2019-03-15 LECH: SSI %ngày=-0.39",
+     "2019-06-20 LECH: SSI KL=568280",
+     "2020-04-09 LECH: SSI KL=1306880",
+     "2020-04-27 LECH: SSI KL=358860"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:21+07:00"
+  },
+  "D2D": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2199,
+    "mismatch": 8,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=50100; SSI %ngày=1.96; VPS KL=50100",
+     "2019-06-20 LECH: SSI KL=48800",
+     "2022-09-12 LECH: VPS KL=55364",
+     "2022-09-14 LECH: VPS KL=62937",
+     "2023-08-28 LECH: VPS KL=18426"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:23+07:00"
+  },
+  "SZL": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2128,
+    "mismatch": 79,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=38600",
+     "2020-03-12 LECH: SSI KL=156150",
+     "2020-03-18 LECH: SSI %ngày=-3.36",
+     "2020-03-19 LECH: SSI %ngày=-2.73",
+     "2020-04-09 LECH: SSI KL=63350; SSI %ngày=3.19"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:24+07:00"
+  },
+  "SZC": {
+   "last_date": "2026-11-09",
+   "first_date": "2019-01-15",
+   "rows": 1950,
+   "added": 1950,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1950,
+    "ok": 1941,
+    "mismatch": 9,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=135020; VPS KL=135020",
+     "2019-06-20 LECH: SSI KL=161740; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-3.13",
+     "2019-11-25 LECH: SSI %ngày=0.30",
+     "2019-11-26 LECH: SSI %ngày=-0.90"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:26+07:00"
+  },
+  "LHG": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2195,
+    "mismatch": 12,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=534430; SSI %ngày=1.83; VPS KL=534430; VPS %ngày=1.82",
+     "2019-03-15 LECH: SSI %ngày=-0.67; VPS %ngày=-0.67",
+     "2019-06-20 LECH: SSI KL=98750; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-0.33",
+     "2020-02-03 LECH: SSI KL=295000"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:28+07:00"
+  },
+  "KBC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2203,
+    "mismatch": 4,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=3216740",
+     "2019-06-20 LECH: SSI KL=1166120; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-1.38",
+     "2020-05-22 LECH: SSI KL=3159570"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:29+07:00"
+  },
+  "BCM": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-02-21",
+   "rows": 2171,
+   "added": 2171,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2171,
+    "ok": 2145,
+    "mismatch": 26,
+    "examples": [
+     "2018-11-27 LECH: VPS %ngày=1.01",
+     "2018-11-28 LECH: VPS %ngày=5.00",
+     "2019-01-30 LECH: VPS %ngày=0.00",
+     "2019-01-31 LECH: VPS %ngày=2.22",
+     "2019-07-04 LECH: SSI %ngày=1.28; VPS %ngày=1.26"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:31+07:00"
+  },
+  "VPI": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2202,
+   "added": 2202,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2202,
+    "ok": 2181,
+    "mismatch": 21,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=231500; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=0.61",
+     "2020-01-22 LECH: SSI %ngày=0.00",
+     "2020-01-30 LECH: SSI %ngày=-1.10",
+     "2020-02-19 LECH: VPS KL=530770"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:33+07:00"
+  },
+  "CII": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2194,
+    "mismatch": 13,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=1070180; SSI %ngày=0.00; VPS KL=1070180; VPS %ngày=0.00",
+     "2019-03-15 LECH: SSI %ngày=-0.83; VPS %ngày=-0.81",
+     "2019-06-20 LECH: SSI KL=205750; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=0.67",
+     "2020-02-25 LECH: SSI %ngày=-3.26"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:36+07:00"
+  },
+  "NHA": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2203,
+   "added": 2203,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2203,
+    "ok": 2185,
+    "mismatch": 18,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=700; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-4.98",
+     "2019-07-11 LECH: SSI KL=1600",
+     "2019-08-20 LECH: SSI KL=3100",
+     "2019-09-06 LECH: SSI KL=1700"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:38+07:00"
+  },
+  "FIR": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-10-18",
+   "rows": 2011,
+   "added": 2011,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2011,
+    "ok": 2006,
+    "mismatch": 5,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=28020",
+     "2020-02-06 LECH: SSI KL=53230",
+     "2020-02-10 LECH: SSI KL=40190",
+     "2020-04-27 LECH: SSI KL=84180",
+     "2025-05-26 LECH: SSI KL=231200"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:39+07:00"
+  },
+  "CKG": {
+   "last_date": "2026-11-09",
+   "first_date": "2020-03-25",
+   "rows": 1655,
+   "added": 1655,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1655,
+    "ok": 1648,
+    "mismatch": 7,
+    "examples": [
+     "2020-03-30 LECH: SSI %ngày=-5.62",
+     "2020-03-31 LECH: SSI %ngày=-8.33",
+     "2020-06-09 LECH: SSI %ngày=1.24",
+     "2020-06-10 LECH: SSI %ngày=1.64",
+     "2024-11-22 LECH: VPS KL=3291"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:41+07:00"
+  },
+  "CCL": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2189,
+    "mismatch": 18,
+    "examples": [
+     "2018-06-29 LECH: SSI %ngày=4.35",
+     "2019-01-24 LECH: SSI %ngày=-1.73",
+     "2019-02-11 LECH: SSI %ngày=1.17",
+     "2019-03-14 LECH: SSI KL=387090; SSI %ngày=2.82; VPS KL=387090; VPS %ngày=2.93",
+     "2019-03-15 LECH: SSI %ngày=-0.55; VPS %ngày=-0.55"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:43+07:00"
+  },
+  "DRH": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2198,
+    "mismatch": 9,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=169610",
+     "2019-06-20 LECH: SSI KL=116870; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=5.92",
+     "2020-02-05 LECH: SSI KL=693910",
+     "2020-02-10 LECH: SSI KL=898900"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:45+07:00"
+  },
+  "DTA": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2202,
+    "ok": 2145,
+    "mismatch": 57,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=2830",
+     "2020-01-10 LECH: SSI %ngày=11.21",
+     "2020-01-15 LECH: SSI %ngày=-13.07",
+     "2020-02-05 LECH: SSI KL=420; SSI %ngày=-6.52",
+     "2020-02-06 LECH: SSI %ngày=8.71"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:46+07:00"
+  },
+  "FDC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2133,
+    "ok": 2084,
+    "mismatch": 49,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=3800; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=0.71",
+     "2020-02-05 LECH: SSI KL=500",
+     "2020-03-17 LECH: SSI %ngày=-10.28",
+     "2020-04-21 LECH: SSI %ngày=-6.97"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:48+07:00"
+  },
+  "FIT": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2196,
+    "mismatch": 11,
+    "examples": [
+     "2019-03-14 LECH: SSI %ngày=5.75",
+     "2019-03-15 LECH: SSI %ngày=-1.21",
+     "2019-06-20 LECH: SSI KL=204200",
+     "2020-02-05 LECH: SSI KL=749890",
+     "2020-02-10 LECH: SSI KL=260690; SSI %ngày=-2.98"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:50+07:00"
+  },
+  "HAR": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2202,
+    "mismatch": 5,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=448110; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-3.18",
+     "2020-04-27 LECH: SSI KL=618850",
+     "2020-05-19 LECH: SSI %ngày=1.35",
+     "2020-05-20 LECH: SSI %ngày=-4.67"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:52+07:00"
+  },
+  "IJC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2200,
+    "mismatch": 7,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=326350; VPS KL=326350",
+     "2019-06-20 LECH: SSI KL=199830",
+     "2020-04-16 LECH: SSI KL=224250; SSI %ngày=-0.68",
+     "2020-04-17 LECH: SSI %ngày=7.78",
+     "2020-04-27 LECH: SSI KL=580560"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:54+07:00"
+  },
+  "LEC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2200,
+   "added": 2200,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2102,
+    "ok": 1712,
+    "mismatch": 390,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=2030",
+     "2019-06-20 LECH: SSI KL=700; SSI %ngày=0.00",
+     "2020-02-03 LECH: SSI KL=930; SSI %ngày=-6.10",
+     "2020-02-04 LECH: SSI %ngày=7.14",
+     "2020-02-20 LECH: SSI %ngày=-6.36"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:55+07:00"
+  },
+  "LGL": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2182,
+    "mismatch": 25,
+    "examples": [
+     "2019-03-14 LECH: SSI %ngày=1.24",
+     "2019-03-15 LECH: SSI %ngày=0.00",
+     "2019-06-20 LECH: SSI KL=538260",
+     "2019-09-23 LECH: SSI %ngày=0.00",
+     "2019-09-24 LECH: SSI %ngày=-0.97"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:57+07:00"
+  },
+  "NBB": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2188,
+    "mismatch": 19,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=671300; SSI %ngày=-2.40",
+     "2019-03-15 LECH: SSI %ngày=2.46",
+     "2019-06-20 LECH: SSI KL=32690; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-3.74",
+     "2020-03-04 LECH: SSI KL=4010"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:38:59+07:00"
+  },
+  "NVT": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2155,
+    "ok": 2078,
+    "mismatch": 77,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=22870; SSI %ngày=-0.59",
+     "2019-03-15 LECH: SSI %ngày=-1.89",
+     "2019-06-20 LECH: SSI KL=700; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=2.70",
+     "2019-11-27 LECH: SSI %ngày=0.67"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:01+07:00"
+  },
+  "OGC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2194,
+    "mismatch": 13,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=2689820",
+     "2019-06-20 LECH: SSI KL=659630",
+     "2020-01-31 LECH: SSI KL=200310",
+     "2020-04-22 LECH: SSI %ngày=2.12",
+     "2020-04-23 LECH: SSI %ngày=2.08"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:03+07:00"
+  },
+  "SJS": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2177,
+    "mismatch": 30,
+    "examples": [
+     "2019-06-20 LECH: SSI KL=147070; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-3.21",
+     "2020-01-10 LECH: SSI %ngày=163.03",
+     "2020-01-15 LECH: SSI %ngày=-61.27",
+     "2020-02-03 LECH: SSI KL=404000; SSI %ngày=-2.98"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:05+07:00"
+  },
+  "SIP": {
+   "last_date": "2026-11-09",
+   "first_date": "2019-06-06",
+   "rows": 1852,
+   "added": 1852,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1852,
+    "ok": 1773,
+    "mismatch": 79,
+    "examples": [
+     "2019-07-04 LECH: SSI %ngày=-0.62; VPS %ngày=-0.56",
+     "2019-07-05 LECH: SSI %ngày=18.15; VPS %ngày=18.13",
+     "2019-10-31 LECH: VPS %ngày=0.00",
+     "2019-11-01 LECH: VPS %ngày=7.43",
+     "2019-11-27 LECH: SSI KL=3500"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:06+07:00"
+  },
+  "TCH": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2194,
+    "mismatch": 13,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=366280; VPS KL=366280",
+     "2019-06-20 LECH: SSI KL=777780; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=-1.77",
+     "2020-03-24 LECH: SSI KL=123240",
+     "2020-04-09 LECH: SSI KL=608790"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:08+07:00"
+  },
+  "TIP": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2207,
+    "ok": 2191,
+    "mismatch": 16,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=26000; VPS KL=26000",
+     "2019-06-20 LECH: SSI KL=51580; SSI %ngày=0.00",
+     "2019-06-21 LECH: SSI %ngày=10.31",
+     "2020-01-20 LECH: SSI %ngày=0.00",
+     "2020-01-21 LECH: SSI %ngày=-0.28"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:10+07:00"
+  },
+  "TIX": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2126,
+    "ok": 2095,
+    "mismatch": 31,
+    "examples": [
+     "2018-11-01 LECH: SSI %ngày=9.69; VPS %ngày=9.68",
+     "2019-11-26 LECH: SSI KL=210",
+     "2020-05-12 LECH: SSI KL=20",
+     "2020-06-12 LECH: SSI KL=100; SSI %ngày=-4.74",
+     "2022-09-12 LECH: VPS KL=256"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:12+07:00"
+  },
+  "UIC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2207,
+   "added": 2207,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2173,
+    "ok": 2089,
+    "mismatch": 84,
+    "examples": [
+     "2019-03-14 LECH: SSI KL=450",
+     "2019-06-20 LECH: SSI KL=360",
+     "2019-11-13 LECH: SSI %ngày=3.84",
+     "2019-11-14 LECH: SSI %ngày=-1.46",
+     "2020-02-11 LECH: SSI KL=30"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:14+07:00"
+  },
+  "NTC": {
+   "last_date": "2026-11-09",
+   "first_date": "2018-01-02",
+   "rows": 2201,
+   "added": 2201,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 2201,
+    "ok": 1956,
+    "mismatch": 245,
+    "examples": [
+     "2018-08-15 LECH: SSI KL=29400",
+     "2019-07-04 LECH: SSI %ngày=-1.27; VPS %ngày=-1.28",
+     "2019-07-05 LECH: SSI %ngày=2.71; VPS %ngày=2.72",
+     "2019-12-02 LECH: VPS %ngày=0.24",
+     "2019-12-03 LECH: VPS %ngày=-1.77"
+    ]
+   },
+   "refreshed_at": "2026-11-09T23:39:15+07:00"
+  },
+  "KHG": {
+   "last_date": "2026-11-09",
+   "first_date": "2021-07-19",
+   "rows": 1322,
+   "added": 1322,
+   "errors": {},
+   "ok": true,
+   "xcheck": {
+    "checked": 1322,
+    "ok": 1322,
+    "mismatch": 0,
+    "examples": []
+   },
+   "refreshed_at": "2026-11-09T23:39:17+07:00"
+  }
+ },
+ "fundamentals": {
+  "VIC": {
+   "ticker": "VIC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:18"
+  },
+  "VHM": {
+   "ticker": "VHM",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:18"
+  },
+  "VRE": {
+   "ticker": "VRE",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:19"
+  },
+  "KDH": {
+   "ticker": "KDH",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:19"
+  },
+  "NLG": {
+   "ticker": "NLG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:19"
+  },
+  "NVL": {
+   "ticker": "NVL",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:20"
+  },
+  "DXG": {
+   "ticker": "DXG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:20"
+  },
+  "DXS": {
+   "ticker": "DXS",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:20"
+  },
+  "PDR": {
+   "ticker": "PDR",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:21"
+  },
+  "DIG": {
+   "ticker": "DIG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:21"
+  },
+  "HDG": {
+   "ticker": "HDG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:22"
+  },
+  "AGG": {
+   "ticker": "AGG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:22"
+  },
+  "CRE": {
+   "ticker": "CRE",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:22"
+  },
+  "HDC": {
+   "ticker": "HDC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:23"
+  },
+  "HQC": {
+   "ticker": "HQC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:23"
+  },
+  "HPX": {
+   "ticker": "HPX",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:24"
+  },
+  "QCG": {
+   "ticker": "QCG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:24"
+  },
+  "ITC": {
+   "ticker": "ITC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:24"
+  },
+  "SCR": {
+   "ticker": "SCR",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:25"
+  },
+  "SGR": {
+   "ticker": "SGR",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:25"
+  },
+  "NTL": {
+   "ticker": "NTL",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:26"
+  },
+  "VPH": {
+   "ticker": "VPH",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:26"
+  },
+  "TDC": {
+   "ticker": "TDC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:26"
+  },
+  "TDH": {
+   "ticker": "TDH",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:27"
+  },
+  "D2D": {
+   "ticker": "D2D",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:27"
+  },
+  "SZL": {
+   "ticker": "SZL",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:28"
+  },
+  "SZC": {
+   "ticker": "SZC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:28"
+  },
+  "LHG": {
+   "ticker": "LHG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:28"
+  },
+  "KBC": {
+   "ticker": "KBC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:29"
+  },
+  "BCM": {
+   "ticker": "BCM",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:29"
+  },
+  "VPI": {
+   "ticker": "VPI",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:29"
+  },
+  "CII": {
+   "ticker": "CII",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:30"
+  },
+  "NHA": {
+   "ticker": "NHA",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:30"
+  },
+  "FIR": {
+   "ticker": "FIR",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-06-30",
+   "refreshed_at": "2026-11-09T23:39:31"
+  },
+  "CKG": {
+   "ticker": "CKG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:31"
+  },
+  "CCL": {
+   "ticker": "CCL",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:31"
+  },
+  "DRH": {
+   "ticker": "DRH",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:32"
+  },
+  "DTA": {
+   "ticker": "DTA",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:32"
+  },
+  "FDC": {
+   "ticker": "FDC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:33"
+  },
+  "FIT": {
+   "ticker": "FIT",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:33"
+  },
+  "HAR": {
+   "ticker": "HAR",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:33"
+  },
+  "IJC": {
+   "ticker": "IJC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:34"
+  },
+  "LEC": {
+   "ticker": "LEC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:34"
+  },
+  "LGL": {
+   "ticker": "LGL",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:35"
+  },
+  "NBB": {
+   "ticker": "NBB",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:35"
+  },
+  "NVT": {
+   "ticker": "NVT",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:35"
+  },
+  "OGC": {
+   "ticker": "OGC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:36"
+  },
+  "SJS": {
+   "ticker": "SJS",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:36"
+  },
+  "SIP": {
+   "ticker": "SIP",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:37"
+  },
+  "TCH": {
+   "ticker": "TCH",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:37"
+  },
+  "TIP": {
+   "ticker": "TIP",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:37"
+  },
+  "TIX": {
+   "ticker": "TIX",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:38"
+  },
+  "UIC": {
+   "ticker": "UIC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:38"
+  },
+  "NTC": {
+   "ticker": "NTC",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:39"
+  },
+  "KHG": {
+   "ticker": "KHG",
+   "ok": true,
+   "errors": {},
+   "last_quarter": "2026-09-30",
+   "refreshed_at": "2026-11-09T23:39:39"
+  }
+ },
+ "macro": {
+  "cpi": {
+   "ok": true,
+   "last_period": "2026-10",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:28"
+  },
+  "fx": {
+   "ok": true,
+   "last_period": "2026-08",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:30"
+  },
+  "gold": {
+   "ok": true,
+   "last_period": "2026-09",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:31"
+  },
+  "gdp": {
+   "ok": true,
+   "last_period": "2025",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:32"
+  },
+  "nso": {
+   "ok": true,
+   "last_period": "2026-10",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:25"
+  },
+  "sbv": {
+   "ok": true,
+   "last_period": "2026-11-09",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:26"
+  },
+  "sjc": {
+   "ok": true,
+   "last_period": "2026-11",
+   "error": null,
+   "refreshed_at": "2026-11-10T00:23:32"
+  }
+ },
+ "last_refresh": {
+  "all": {
+   "at": "2026-11-09T23:39:44+07:00",
+   "errors": {}
+  }
+ }
+}
