@@ -150,6 +150,11 @@ Không cần cài đặt gì. Chỉ cần giải nén thư mục này ra máy.
 
 
 def main():
+    for stream in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
     for _ in range(5):  # Finder/Explorer may recreate .DS_Store/Thumbs.db while deleting
         if not os.path.exists(OUT):
             break
