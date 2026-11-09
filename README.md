@@ -10,9 +10,9 @@
 
 ## 1. Tải về
 
-1. Bấm vào link này để tải: **[⬇ Tải ứng dụng (BDS-HOSE-App.zip)](https://github.com/tunt01102/stok-data/releases/latest/download/BDS-HOSE-App.zip)**
+1. Bấm vào link này để tải: **[⬇ Tải ứng dụng (BDS-HOSE-App.zip)](https://github.com/tunt01102/stock-data/releases/latest/download/BDS-HOSE-App.zip)**
    - File khoảng 90 MB, chứa sẵn mọi thứ cần thiết và dữ liệu từ 2018.
-   - Nếu link không chạy: mở trang **[Releases](https://github.com/tunt01102/stok-data/releases)**, bấm vào file `BDS-HOSE-App.zip` ở bản mới nhất.
+   - Nếu link không chạy: mở trang **[Releases](https://github.com/tunt01102/stock-data/releases)**, bấm vào file `BDS-HOSE-App.zip` ở bản mới nhất.
 2. Tìm file vừa tải (thường ở thư mục **Downloads / Tải xuống**).
 3. **Giải nén** file:
    - **Windows:** bấm chuột phải vào file → chọn **Extract All… (Giải nén tất cả)** → bấm **Extract**.

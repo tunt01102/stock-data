@@ -313,6 +313,33 @@ class TestOfficialParsers(unittest.TestCase):
         self.assertEqual(f("Chỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la Mỹ tháng Mười và mười tháng năm 2026"), "2026-10")
         self.assertIsNone(f("Báo cáo tình hình kinh tế – xã hội tháng 10 năm 2026"))
 
+    def test_gold_lowercase_no_space(self):
+        from core.official import parse_release
+        t = ("Chỉ số giá tiêu dùng (CPI) tháng 5/2022 tăng 0,38% so với tháng trước và tăng 2,86% so với cùng kỳ năm "
+             "trước. Trong nước, chỉ số giá vàng tháng 5/2022giảm 0,52% so với tháng trước; tăng 2,75% so với cùng kỳ "
+             "năm 2021. Chỉ số giá đô la Mỹ tháng 5/2022 tăng 0,35% so với tháng trước; tăng 0,1% so với cùng kỳ")
+        r = parse_release(t, "2022-05")
+        self.assertEqual((r["cpi_yoy"], r["gold_idx_yoy"], r["usd_idx_yoy"]), (2.86, 2.75, 0.1))
+
+    def test_report_titles(self):
+        from core.official import parse_report_period as f
+        self.assertEqual(f("Báo cáo tình hình kinh tế – xã hội tháng 10 và 10 tháng năm 2020"), "2020-10")
+        self.assertEqual(f("Báo cáo tình hình kinh tế – xã hội quý III và 9 tháng năm 2020"), "2020-09")
+        self.assertEqual(f("Thông cáo báo chí tình hình kinh tế – xã hội quý IV và năm 2019"), "2019-12")
+        self.assertEqual(f("Báo cáo tình hình kinh tế – xã hội 6 tháng đầu năm 2019"), "2019-06")
+        self.assertIsNone(f("Một số nét chính tình hình kinh tế – xã hội tháng 10"))
+
+    def test_sbv_fx_item_uses_effective_date(self):
+        from core.official import parse_sbv_fx_item
+        it = {"title": "17/11/2026", "contentFields": [
+            {"name": "NgayBatDau", "contentFieldValue": {"data": "2025-11-16T17:00:00Z"}},
+            {"name": "TyGiaSo", "contentFieldValue": {"data": "25254"}},
+            {"name": "SoVanBan", "contentFieldValue": {"data": "288/TB-NHNN"}}]}
+        r = parse_sbv_fx_item(it, today="2026-11-10")
+        self.assertEqual((r["date"], r["central_rate"]), ("2025-11-17", 25254.0))
+        it["contentFields"][0]["contentFieldValue"]["data"] = "2026-12-01T17:00:00Z"
+        self.assertIsNone(parse_sbv_fx_item(it, today="2026-11-10"))  # future date rejected
+
     def test_sbv(self):
         from core.official import parse_sbv_rates, parse_sbv_fx
         r = parse_sbv_rates("Lãi suất tái chiết khấu 3,000% 1123/QĐ-NHNN ngày 16/06/2023 19/03/2023 Lãi suất tái cấp vốn "

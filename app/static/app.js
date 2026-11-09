@@ -439,6 +439,7 @@ async function renderMacro() {
   const gqL = last(gq);
   const cpiChecks = M.cpi_annual && M.cpi_annual.rows ? Object.values(M.cpi_annual.rows).filter(r => r && r.year) : [];
   const fxT = M.fx_today && !M.fx_today.error ? M.fx_today : null;
+  const fxPrev = (M.fx || []).slice().reverse().find(r => r.xcheck && r.xcheck !== "NA");
   const sbvLive = M.sbv_live || null, cen = sbvLive && sbvLive.fx && sbvLive.fx.central_rate ? sbvLive.fx : null;
   const fxDiff = fxT && fxL ? (fxT.transfer / +fxL.value - 1) * 100 : null;
   grid.innerHTML = [
@@ -465,16 +466,20 @@ async function renderMacro() {
        <p class="caption">${t("source")}: ${link(M.links.nso, "Cục Thống kê (NSO)")} · ${link(M.links.wb_gdp, "World Bank")}. ${M.gdp_quarterly && M.gdp_quarterly.note ? esc(M.gdp_quarterly.note.slice(0, 300)) : ""}</p>`),
     card("fx", t("mk_fx"), staleNote("fx", fxL && fxL.period, 3) + staleNote("sbv", null, 99) +
       (cen ? `<div class="kv"><span>${link(M.links.sbv_fx, t("central"))}: <b>${num(cen.central_rate, 0)}</b> (${dmy(cen.date)}, ${esc(cen.notice || "")})</span>
-        ${fxL ? `<span>IMF ${fxL.period}: ${xbadge(Math.abs(cen.central_rate / +fxL.value - 1) <= 0.03 ? "OK" : "LECH")}</span>` : ""}
         ${fxT ? `<span>Vietcombank: ${xbadge(fxT.sell <= cen.central_rate * 1.05 + 1 && fxT.buy >= cen.central_rate * 0.95 - 1 ? "OK" : "LECH")} (${LANG === "vi" ? "trong biên độ ±5%" : "within ±5% band"})</span>` : ""}</div>` : "") +
-      `<div class="kv"><span>${t("latest")} IMF: <b>${fxL ? num(fxL.value, 0) : "–"}</b> (${fxL ? fxL.period : "–"})</span>
+      `<div class="kv"><span>${t("latest")} (${fxL ? fxL.period : "–"}, ${LANG === "vi" ? "bình quân tháng" : "monthly avg"}): <b>${fxL ? num(fxL.value, 0) : "–"}</b> ${fxL ? link(fxL.source_url, fxL.source) : ""}</span>
+       <span>${t("xcheck")} IMF: ${xbadge(fxPrev && fxPrev.xcheck)} (${fxPrev ? fxPrev.period : "–"})</span></div>
+       <div class="kv">
       ${fxT ? `<span>${t("vcb_today", { b: num(fxT.buy, 0), t: num(fxT.transfer, 0), s: num(fxT.sell, 0) })}</span><span>${t("xcheck")}: ${xbadge(Math.abs(fxDiff) <= 3 ? "OK" : "LECH " + num(fxDiff, 1) + "%")}</span>` : `<span class="badge bad">Vietcombank: ${esc((M.fx_today && M.fx_today.error) || "NA")}</span>`}</div>`,
-      `<p class="caption">${t("source")}: ${link(M.links.sbv_fx, "Ngân hàng Nhà nước (tỷ giá trung tâm)")} · ${link(M.links.imf_er, "IMF Exchange Rates")} (${LANG === "vi" ? "lịch sử tháng, số liệu gốc NHNN" : "monthly history, from SBV"}) · ${link(M.links.wb_fx, "World Bank")} · ${link(M.links.vcb, "Vietcombank")}</p>`),
+      `<details><summary>${t("rows_by_source")}</summary><table class="grid small"><thead><tr><th>${t("period")}</th><th>NHNN / ${t("latest")}</th><th>IMF</th><th>${t("xcheck")}</th><th class="l">${t("source")}</th></tr></thead><tbody>${M.fx.slice().reverse().map(r => `<tr><td>${r.period}</td><td>${num(r.value, 0)}</td><td>${r.xcheck_value ? num(r.xcheck_value, 0) : "–"}</td><td>${xbadge(r.xcheck)}</td><td class="l">${link(r.source_url, r.source.startsWith("Ngân") ? "NHNN" : "IMF")}</td></tr>`).join("")}</tbody></table></details>
+       <p class="caption">${t("source")}: ${link(M.links.sbv_fx_hist, "Ngân hàng Nhà nước – tỷ giá trung tâm hằng ngày")} (${LANG === "vi" ? "chính" : "primary"}) · ${link(M.links.sbv_fx, "NHNN hôm nay")} · ${link(M.links.imf_er, "IMF Exchange Rates")} (${LANG === "vi" ? "đối chiếu" : "cross-check"}) · ${link(M.links.wb_fx, "World Bank")} · ${link(M.links.vcb, "Vietcombank")}</p>`),
     card("gold", t("mk_gold"), staleNote("gold", goldL && goldL.period, 3) + staleNote("sjc", sjcL && sjcL.period, 2) +
       `<div class="kv"><span>${t("gold_sjc")}: <b>${sjcL ? num(sjcL.value, 1) : "–"}</b> (${sjcL ? dmy(sjcL.date) : "–"}) ${sjcL ? link(sjcL.source_url, "webgia") : ""}</span>
        <span>${t("gold_world")}: <b>${goldL ? num(goldL.vnd_per_luong, 1) : "–"}</b> (${goldL ? goldL.period : "–"}; ${goldL ? num(goldL.value, 0) : "–"} USD/oz)</span>
        ${sjcL && sjcL.premium_pct ? `<span>${t("gold_prem")}: <b>${num(sjcL.premium_pct, 1)}%</b> ${xbadge(sjcL.xcheck)}</span>` : ""}</div>`,
-      (goldChk ? `<div class="kv"><span>${link(goldChk.url, t("gold_idx"))} ${goldChk.p}: <b>${num(goldChk.nso, 2)}%</b></span><span>${t("sjc_yoy")}: <b>${num(goldChk.sjc, 2)}%</b></span><span>${xbadge(Math.abs(goldChk.nso - goldChk.sjc) <= 10 ? "OK" : "LECH")}</span></div>` : "") +
+      `<h4 style="margin:10px 0 4px">${t("gold_idx_title")}</h4>` +
+      (goldChk ? `<div class="kv"><span>${link(goldChk.url, t("gold_idx"))} ${goldChk.p}: <b>${num(goldChk.nso, 2)}%</b></span><span>${t("sjc_yoy")}: <b>${num(goldChk.sjc, 2)}%</b></span></div>` : "") +
+      `<div class="chartbox"><canvas id="cm_gold2"></canvas></div><p class="caption">${t("gold_idx_note")}</p>` +
       `<p class="caption">${t("gold_prem_note")}</p><p class="caption">${t("source")}: ${link(M.links.imf_pcps, "IMF Primary Commodity Prices")} · ${link(M.links.webgia, "webgia.com")} (${LANG === "vi" ? "dẫn nguồn" : "citing"} ${link(M.links.sjc, "SJC")})${goldL && goldL.xcheck_source ? " · " + esc(goldL.xcheck_source) : ""}</p>`),
   ].join("");
   const opt = (unit, d = 1) => ({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, d)}${unit}` } } }, scales: { x: { ticks: { maxTicksLimit: 8, maxRotation: 0 }, grid: { display: false } } } });
@@ -494,6 +499,16 @@ async function renderMacro() {
     { label: t("gold_sjc"), data: M.gold.map(r => sjcMap[r.period] ?? null), borderColor: C[1], spanGaps: true },
     { label: t("gold_world"), data: M.gold.map(r => r.vnd_per_luong === "" ? null : +r.vnd_per_luong), borderColor: C[0] }] },
     options: Object.assign(opt("", 1), { plugins: { legend: { display: true }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}` } } } }) });
+  {  // official NSO gold price index (y/y) vs SJC bar price change (y/y): same unit, one axis
+    const nsoG = (M.nso_cpi || []).filter(r => r.gold_idx_yoy !== "" && r.gold_idx_yoy != null);
+    const sm = Object.fromEntries(sjcRows.map(r => [r.period, +r.value]));
+    const labs = nsoG.map(r => r.period);
+    const sjcY = labs.map(p => { const b = sm[`${+p.slice(0, 4) - 1}${p.slice(4)}`]; return sm[p] && b ? (sm[p] / b - 1) * 100 : null; });
+    mkChart("cm_gold2", { type: "line", data: { labels: labs, datasets: [
+      { label: t("gold_idx"), data: nsoG.map(r => +r.gold_idx_yoy), borderColor: C[0] },
+      { label: t("sjc_yoy"), data: sjcY, borderColor: C[1], borderDash: [5, 3], spanGaps: true }] },
+      options: Object.assign(opt("%", 1), { plugins: { legend: { display: true }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}%` } } } }) });
+  }
   // legal
   const L = (M.legal && M.legal.rows) || [];
   $("#legalTable").innerHTML = `<thead><tr><th class="l">${t("doc_issued")}</th><th class="l">${t("doc_eff")}</th><th class="l">${t("doc_no")}</th><th class="l">${t("doc_title")}</th><th class="l">${t("doc_sum")}</th></tr></thead><tbody>` +

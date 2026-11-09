@@ -82,6 +82,8 @@ vi: {
   cols_btn: "☰ Chọn cột hiển thị", cols_all: "Hiện tất cả", cols_basic: "Chỉ cột cơ bản", cols_fin: "Giá + tài chính", cols_note: "Cột STT và Mã luôn hiện và được khoá khi kéo ngang.",
   sbv_live: "Trên sbv.gov.vn hiện tại", interbank: "Lãi suất liên ngân hàng qua đêm", central: "Tỷ giá trung tâm NHNN",
   vs_curated: "khớp bảng thủ công", nso_release: "Thông cáo tháng của Cục Thống kê", gold_idx: "Chỉ số giá vàng (NSO) so cùng kỳ", sjc_yoy: "Giá SJC so cùng kỳ",
+  gold_idx_title: "Chỉ số giá vàng chính thức (Cục Thống kê), % so cùng kỳ",
+  gold_idx_note: "Chỉ số giá vàng của Cục Thống kê đo giá vàng bình quân trên thị trường trong nước (chủ yếu vàng nhẫn, trang sức) nên khác giá vàng miếng SJC: ví dụ năm 2022 và 2024 phí chênh của vàng miếng thay đổi mạnh do chính sách quản lý. Đường SJC chỉ để tham chiếu, không phải sai số.",
   official_link: "văn bản gốc (cổng Chính phủ)", other_link: "bản tham khảo", rows_by_source: "Số liệu từng tháng và nguồn",
 },
 en: {
@@ -164,6 +166,8 @@ en: {
   cols_btn: "☰ Choose columns", cols_all: "Show all", cols_basic: "Basic only", cols_fin: "Price + financials", cols_note: "The # and Ticker columns always show and stay fixed when scrolling sideways.",
   sbv_live: "Currently on sbv.gov.vn", interbank: "Overnight interbank rate", central: "SBV central rate",
   vs_curated: "matches curated table", nso_release: "Statistics office monthly release", gold_idx: "Gold price index (NSO) y/y", sjc_yoy: "SJC price y/y",
+  gold_idx_title: "Official gold price index (statistics office), % y/y",
+  gold_idx_note: "The statistics office's gold price index tracks average domestic gold prices (mostly rings and jewellery), so it differs from SJC bar prices: e.g. in 2022 and 2024 the bar premium moved sharply due to regulation. The SJC line is a reference, not an error.",
   official_link: "official text (Government portal)", other_link: "reference copy", rows_by_source: "Monthly figures and sources",
 }};
 

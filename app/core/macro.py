@@ -30,6 +30,7 @@ LINKS = {
     "nso": "https://www.nso.gov.vn/",
     "sbv_rates": "https://www.sbv.gov.vn/vi/l%C3%A3i-su%E1%BA%A5t1",
     "sbv_fx": "https://www.sbv.gov.vn/vi/t%E1%BB%B7-gi%C3%A1",
+    "sbv_fx_hist": "https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam",
     "sbv": "https://www.sbv.gov.vn/",
     "sjc": "https://sjc.com.vn/",
     "webgia": "https://webgia.com/gia-vang/sjc/",
@@ -132,10 +133,32 @@ def refresh_cpi():
 
 # ------------------------------------------------------------------ USD/VND
 def refresh_fx():
-    data = _imf("IMF.STA/ER", "VNM.USD_XDC.PA_RT.M")
-    rows = [_mk(p, 1.0 / v, "VND/USD (bình quân tháng)", "IMF (số liệu gốc: NHNN)",
-                LINKS["imf_er"]) for r, p, v in sorted(data, key=lambda x: x[1])
-            if p >= "%d-01" % START_YEAR and v]
+    imf = {}
+    try:
+        data = _imf("IMF.STA/ER", "VNM.USD_XDC.PA_RT.M")
+        imf = {p: 1.0 / v for r, p, v in data if v and p >= "%d-01" % START_YEAR}
+    except FetchError:
+        pass
+    # Primary: monthly average of the State Bank's daily central rate (sbv.gov.vn)
+    by_month = {}
+    for r in store.read_csv(store.path("macro", "sbv_central.csv")):
+        by_month.setdefault(r["date"][:7], []).append(float(r["central_rate"]))
+    rows = []
+    for per in sorted(set(by_month) | set(imf)):
+        if per < "%d-01" % START_YEAR:
+            continue
+        if per in by_month:
+            v = sum(by_month[per]) / len(by_month[per])
+            r = _mk(per, v, "VND/USD (bình quân tháng tỷ giá trung tâm)", "Ngân hàng Nhà nước (sbv.gov.vn)",
+                    LINKS["sbv_fx_hist"], days=len(by_month[per]))
+            if per in imf:
+                r.update(xcheck_value=round(imf[per], 1), xcheck_source="IMF (tỷ giá chính thức bình quân tháng)",
+                         xcheck="OK" if abs(imf[per] / v - 1) <= 0.01 else "LECH")
+        else:
+            r = _mk(per, imf[per], "VND/USD (bình quân tháng)", "IMF (số liệu gốc: NHNN)", LINKS["imf_er"])
+        rows.append(r)
+    if not rows:
+        raise FetchError("Không có số liệu tỷ giá từ NHNN hoặc IMF")
     try:
         wb = _wb("PA.NUS.FCRF")
         for year, v in wb.items():
@@ -296,8 +319,10 @@ def _nso():
 
 
 def _sbv():
-    from .official import refresh_sbv
-    return refresh_sbv()
+    from .official import refresh_sbv, refresh_sbv_fx_history
+    last = refresh_sbv()
+    refresh_sbv_fx_history()
+    return last
 
 
 TASKS = [("nso", _nso), ("sbv", _sbv), ("cpi", refresh_cpi), ("fx", refresh_fx), ("gold", refresh_gold), ("sjc", refresh_sjc),

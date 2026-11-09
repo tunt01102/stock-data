@@ -1,104 +1,108 @@
 period,value,unit,source,source_url,xcheck_value,xcheck_source,xcheck
-2018-01,22410.65,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-02,22439.05,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-03,22454.44,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-04,22488.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-05,22575.04,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-06,22597.31,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-07,22647.5,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-08,22679.26,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-09,22699.88,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-10,22719.81,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-11,22730.62,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2018-12,22783.04,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,22602.0,World Bank (bình quân năm 2018),OK
-2019-01,22850.7,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-02,22902.78,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-03,22952.73,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-04,22996.75,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-05,23054.54,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-06,23059.68,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-07,23068.81,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-08,23114.56,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-09,23142.04,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-10,23154.63,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-11,23143.46,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2019-12,23162.22,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,23050.2,World Bank (bình quân năm 2019),OK
-2020-01,23164.3,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-02,23218.2,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-03,23223.42,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-04,23241.5,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-05,23256.5,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-06,23235.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-07,23222.56,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-08,23209.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-09,23206.84,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-10,23197.22,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-11,23178.96,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2020-12,23146.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,23208.4,World Bank (bình quân năm 2020),OK
-2021-01,23137.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-02,23138.6111,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-03,23195.96,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-04,23203.13,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-05,23159.29,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-06,23140.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-07,23197.93,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-08,23159.54,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-09,23125.38,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-10,23154.27,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-11,23126.58,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2021-12,23178.78,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,23159.8,World Bank (bình quân năm 2021),OK
-2022-01,23102.04,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-02,23115.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-03,23152.89,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-04,23112.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-05,23129.44,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-06,23082.23,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-07,23187.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-08,23190.41,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-09,23295.0,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-10,23564.38,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-11,23679.35,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2022-12,23643.89,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,23271.2,World Bank (bình quân năm 2022),OK
-2023-01,23604.78,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-02,23629.75,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-03,23621.81,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-04,23615.46,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-05,23664.5,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-06,23763.15,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-07,23763.15,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-08,23882.15,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-09,24037.52,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-10,24079.06,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-11,23869.96,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2023-12,23916.54,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,23787.3,World Bank (bình quân năm 2023),OK
-2024-01,23983.08,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-02,23976.09,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-03,23994.88,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-04,24140.24,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-05,24216.46,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-06,24252.8,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-07,24251.56,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-08,24245.85,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-09,24163.54,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-10,24192.52,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-11,24276.42,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2024-12,24285.19,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,24164.9,World Bank (bình quân năm 2024),OK
+2018-01,22410.6538,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22410.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-02,22439.0476,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22439.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-03,22454.4444,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22454.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-04,22489.7143,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22488.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-05,22576.2917,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22575.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-06,22600.2083,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22597.3,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-07,22648.4583,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22647.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-08,22679.2593,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22679.3,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-09,22701.0455,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22699.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-10,22719.8148,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22719.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-11,22731.1667,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22730.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2018-12,22785.28,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22602.0,World Bank (bình quân năm 2018),OK
+2019-01,22853.4583,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22850.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-02,22904.8824,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22902.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-03,22953.0,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22952.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-04,22996.75,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,22996.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-05,23054.75,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23054.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-06,23060.087,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23059.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-07,23068.5417,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23068.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-08,23114.76,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23114.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-09,23142.4091,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23142.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-10,23154.44,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23154.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-11,23143.4615,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23143.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2019-12,23162.6,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23050.2,World Bank (bình quân năm 2019),OK
+2020-01,23161.1579,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23164.3,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-02,23217.4,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23218.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-03,23220.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23223.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-04,23241.75,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23241.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-05,23254.3684,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23256.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-06,23238.9,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23235.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-07,23224.6842,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23222.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-08,23210.5556,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23209.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-09,23204.4444,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23206.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-10,23197.65,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23197.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-11,23183.3,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23179.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2020-12,23146.6667,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23208.4,World Bank (bình quân năm 2020),OK
+2021-01,23133.8,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23137.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-02,23138.375,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23138.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-03,23189.2381,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23196.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-04,23206.8421,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23203.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-05,23164.7059,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23159.3,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-06,23137.2105,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23140.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-07,23199.1579,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23197.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-08,23163.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23159.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-09,23122.8824,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23125.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-10,23160.4211,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23154.3,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-11,23122.4762,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23126.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2021-12,23190.65,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23159.8,World Bank (bình quân năm 2021),OK
+2022-01,23105.25,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23102.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-02,23117.0,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23115.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-03,23155.8,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23152.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-04,23108.6842,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23112.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-05,23136.5263,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23129.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-06,23078.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23082.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-07,23185.7,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23187.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-08,23185.3,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23190.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-09,23282.1667,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23295.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-10,23553.4444,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23564.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-11,23681.7222,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23679.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2022-12,23650.3158,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23271.2,World Bank (bình quân năm 2022),OK
+2023-01,23603.8,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23604.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-02,23629.1429,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23629.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-03,23625.5238,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23621.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-04,23612.4,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23615.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-05,23653.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23664.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-06,23714.05,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23763.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-07,23765.3158,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23763.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-08,23867.9,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23882.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-09,24018.1111,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24037.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-10,24084.5882,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24079.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-11,23996.1,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23870.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2023-12,23927.2,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23787.3,World Bank (bình quân năm 2023),OK
+2024-01,23979.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23983.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-02,23969.8421,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23976.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-03,23996.65,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,23994.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-04,24131.619,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24140.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-05,24253.4,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24216.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-06,24251.25,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24252.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-07,24252.25,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24251.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-08,24251.7,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24245.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-09,24170.3889,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24163.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-10,24189.6316,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24192.5,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-11,24280.4737,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24276.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2024-12,24273.95,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24164.9,World Bank (bình quân năm 2024),OK
 2025-01,24336.1,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
 2025-02,24546.75,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
 2025-03,24787.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-04,24905.72,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-05,24955.72,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-06,25009.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-07,25150.96,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-09,25204.93,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-10,25118.7,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-11,25123.6,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-12,25144.67,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-01,25118.23,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-02,25055.84,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-03,25074.15,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-04,25106.08,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-05,25126.64,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-06,25168.38,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-07,25246.96,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2026-08,25534.42,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
+2025-04,24961.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24905.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-05,24953.2857,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24955.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-06,25016.4737,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25009.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-07,25150.963,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25151.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-08,25251.8519,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,,,NA
+2025-09,25212.2308,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25204.9,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-10,25118.7037,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25118.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-11,25123.6,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25123.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2025-12,25144.6667,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25144.7,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-01,25118.2308,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25118.2,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-02,25055.8421,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25055.8,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-03,25074.1538,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25074.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-04,25106.08,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25106.1,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-05,25126.64,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25126.6,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-06,25168.3846,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25168.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-07,25246.963,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25247.0,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-08,25534.4231,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25534.4,IMF (tỷ giá chính thức bình quân tháng),OK
+2026-09,25620.4167,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,,,NA
+2026-10,25634.4815,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,,,NA
+2026-11,25621.5714,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,,,NA
