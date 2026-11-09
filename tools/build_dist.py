@@ -107,13 +107,19 @@ echo "Đang khởi động... (đóng cửa sổ này để tắt ứng dụng)"
 
 WIN_LAUNCHER = "\r\n".join([
     "@echo off",
-    "chcp 65001 >nul",
     "rem Mo ung dung Phan tich BDS HOSE tren Windows (bam dup vao file nay).",
-    "cd /d \"%~dp0\"",
-    "set PY=%~dp0runtime\\windows-x64\\python\\python.exe",
-    "if not exist \"%PY%\" set PY=python",
+    "rem Luu duong dan thu muc NGAY DAU TIEN: %~dp0 co the bi tinh lai sai sau lenh cd.",
+    "set \"HERE=%~dp0\"",
+    "chcp 65001 >nul",
+    "cd /d \"%HERE%\"",
+    "set \"PY=%HERE%runtime\\windows-x64\\python\\python.exe\"",
+    "if not exist \"%PY%\" (",
+    "  echo Khong tim thay Python di kem trong thu muc runtime. Hay giai nen lai ban day du.",
+    "  pause",
+    "  exit /b 1",
+    ")",
     "echo Dang khoi dong... (dong cua so nay de tat ung dung)",
-    "\"%PY%\" \"%~dp0app\\server.py\"",
+    "\"%PY%\" \"%HERE%app\\server.py\"",
     "if errorlevel 1 pause",
     ""])
 
