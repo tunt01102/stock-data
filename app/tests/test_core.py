@@ -321,6 +321,28 @@ class TestOfficialParsers(unittest.TestCase):
         r = parse_release(t, "2022-05")
         self.assertEqual((r["cpi_yoy"], r["gold_idx_yoy"], r["usd_idx_yoy"]), (2.86, 2.75, 0.1))
 
+    def test_derive_yoy_forward_and_backward(self):
+        from core.official import derive_yoy
+        rows = [{"period": "2018-%02d" % m, "cpi_mom": "1.0", "cpi_yoy": ""} for m in range(1, 13)]
+        rows += [{"period": "2019-01", "cpi_yoy": "5.0", "cpi_mom": "2.0"},
+                 {"period": "2019-02", "cpi_yoy": "", "cpi_mom": "1.0"},      # stated m/m only
+                 {"period": "2019-04", "cpi_yoy": "6.0", "cpi_mom": "0.5"}]   # 2019-03 has no release
+        by = {r["period"]: r for r in derive_yoy(rows)}
+        self.assertAlmostEqual(by["2019-02"]["cpi_yoy"], round((1.05 * 1.01 / 1.01 - 1) * 100, 2))
+        self.assertAlmostEqual(by["2019-03"]["cpi_yoy"], round((1.06 * 1.01 / 1.005 - 1) * 100, 2))
+        self.assertIn("NSO", by["2019-03"]["yoy_method"])
+
+    def test_mom_before_comma_average_clause(self):
+        from core.official import parse_release
+        t = ("Chỉ số giá tiêu dùng (CPI) tháng 5/2019 tăng 0,49% so với tháng trước, CPI bình quân 5 tháng đầu năm "
+             "2019 tăng 2,74% so với cùng kỳ năm 2018, đây là mức tăng bình quân thấp nhất.")
+        r = parse_release(t, "2019-05")
+        self.assertEqual((r["cpi_mom"], r["cpi_yoy"]), (0.49, None))
+        r2 = parse_release("Chỉ số giá tiêu dùng tháng 7/2019 tăng 0,18% so với tháng trước, bình quân 7 tháng năm "
+                           "2019 tăng 2,61% so với cùng kỳ năm 2018. CPI tháng 7/2019 tăng 1,59% so với tháng 12/2018 và "
+                           "tăng 2,44% so với cùng kỳ năm trước.", "2019-07")
+        self.assertEqual((r2["cpi_mom"], r2["cpi_yoy"]), (0.18, 2.44))
+
     def test_report_titles(self):
         from core.official import parse_report_period as f
         self.assertEqual(f("Báo cáo tình hình kinh tế – xã hội tháng 10 và 10 tháng năm 2020"), "2020-10")

@@ -20,7 +20,7 @@ from .net import fetch, fetch_json, FetchError
 SBV_RATES = "https://www.sbv.gov.vn/vi/l%C3%A3i-su%E1%BA%A5t1"
 SBV_FX = "https://www.sbv.gov.vn/vi/t%E1%BB%B7-gi%C3%A1"
 
-NSO_COLS = ["period", "cpi_yoy", "cpi_mom", "gold_idx_yoy", "usd_idx_yoy", "title", "source_url", "published"]
+NSO_COLS = ["period", "cpi_yoy", "cpi_mom", "gold_idx_yoy", "usd_idx_yoy", "yoy_method", "title", "source_url", "published"]
 
 _MONTH_WORDS = [("mười hai", 12), ("mười một", 11), ("mười", 10), ("chín", 9), ("tám", 8), ("bảy", 7),
                 ("sáu", 6), ("năm", 5), ("tư", 4), ("bốn", 4), ("ba", 3), ("hai", 2), ("một", 1), ("giêng", 1)]
@@ -109,7 +109,8 @@ def _region(text, anchors, stops, length=900):
 
 def _first(region, period, kind):
     """First comparison of `kind` in sentences that are about the month itself."""
-    for sent in re.split(r"[.;]\s", region):
+    # split into clauses: sentences, and ", CPI ..." / ", chỉ số giá ..." joins
+    for sent in re.split(r"[.;]\s|,\s(?=(?:(?:CPI|[Cc]hỉ số giá tiêu dùng)\s+)?bình quân)", region):
         low = sent.lower().replace(" ", "")  # the site sometimes splits letters: "b ình quân"
         if any(k.replace(" ", "") in low for k in _SKIP):
             continue
@@ -181,7 +182,8 @@ def _fill_from_socioeconomic_reports(have, since):
     start_y = int(since[:4])
     today = dt.date.today()
     missing = {"%d-%02d" % (y, m) for y in range(start_y, today.year + 1) for m in range(1, 13)
-               if "%d-%02d" % (y, m) < today.strftime("%Y-%m")} - set(have)
+               if "%d-%02d" % (y, m) < today.strftime("%Y-%m")} - \
+        {k for k, v in have.items() if v.get("cpi_yoy") not in (None, "")}
     if not missing:
         return
     for per in sorted(missing):
@@ -201,20 +203,76 @@ def _fill_from_socioeconomic_reports(have, since):
                     continue
                 vals = parse_release(_text(x.get("content", {}).get("rendered", "")), per)
                 if vals.get("cpi_yoy") is not None:
-                    have[per] = dict(period=per, title=title, source_url=x["link"], published=x["date"], **vals)
+                    keep = have.get(per) or {}
+                    row = dict(period=per, title=title, source_url=x["link"], published=x["date"], **vals)
+                    if row.get("cpi_mom") is None and keep.get("cpi_mom") not in (None, ""):
+                        row["cpi_mom"] = keep["cpi_mom"]
+                    for k in ("gold_idx_yoy", "usd_idx_yoy"):
+                        if row.get(k) is None and keep.get(k) not in (None, ""):
+                            row[k] = keep[k]
+                    have[per] = row
                     break
             if per in have:
                 break
             time.sleep(0.2)
 
 
-def refresh_nso_cpi(since="2018-01", max_pages=15):
+def derive_yoy(rows):
+    """Fill missing y/y CPI from the statistics office's own monthly figures:
+        (1+yoy[t]) = (1+yoy[t-1]) * (1+mom[t]) / (1+mom[t-12])   (forward)
+        (1+yoy[t]) = (1+yoy[t+1]) * (1+mom[t-11]) / (1+mom[t+1]) (backward)
+    Marks derived rows with yoy_method='tính từ số liệu NSO'."""
+    def f(x):
+        try:
+            return float(x)
+        except (TypeError, ValueError):
+            return None
+
+    def shift(p, k):
+        y, m = int(p[:4]), int(p[5:7]) + k
+        while m < 1:
+            m, y = m + 12, y - 1
+        while m > 12:
+            m, y = m - 12, y + 1
+        return "%d-%02d" % (y, m)
+    by = {r["period"]: r for r in rows}
+    changed = True
+    while changed:
+        changed = False
+        for p in sorted(by):
+            r = by[p]
+            if f(r.get("cpi_yoy")) is not None:
+                continue
+            prev, mom, mom12 = by.get(shift(p, -1)), f(r.get("cpi_mom")), f((by.get(shift(p, -12)) or {}).get("cpi_mom"))
+            if prev and f(prev.get("cpi_yoy")) is not None and mom is not None and mom12 is not None:
+                v = ((1 + f(prev["cpi_yoy"]) / 100) * (1 + mom / 100) / (1 + mom12 / 100) - 1) * 100
+                r.update(cpi_yoy=round(v, 2), yoy_method="tính từ số liệu NSO (so cùng kỳ tháng trước × biến động tháng)")
+                changed = True
+        # backward pass for months with no release at all
+        for p in sorted(by.keys() | {shift(q, -1) for q in by}):
+            if p in by and f(by[p].get("cpi_yoy")) is not None:
+                continue
+            nxt = by.get(shift(p, 1))
+            if not nxt or f(nxt.get("cpi_yoy")) is None or f(nxt.get("cpi_mom")) is None:
+                continue
+            m11 = f((by.get(shift(p, -11)) or {}).get("cpi_mom"))
+            if m11 is None:
+                continue
+            v = ((1 + f(nxt["cpi_yoy"]) / 100) * (1 + m11 / 100) / (1 + f(nxt["cpi_mom"]) / 100) - 1) * 100
+            base = by.get(p) or {"period": p, "title": "", "source_url": nxt.get("source_url"), "published": ""}
+            base.update(cpi_yoy=round(v, 2), yoy_method="tính lùi từ số liệu NSO tháng sau")
+            by[p] = base
+            changed = True
+    return [by[k] for k in sorted(by)]
+
+
+def refresh_nso_cpi(since="2017-01", max_pages=15):
     """Monthly CPI release of the statistics office, via its WordPress JSON API."""
     p = store.path("macro", "nso_cpi.csv")
-    have = {r["period"]: r for r in store.read_csv(p) if r.get("cpi_yoy")}
+    have = {r["period"]: r for r in store.read_csv(p) if r.get("cpi_yoy") or r.get("cpi_mom")}
     # incremental: only posts published in the last ~120 days once history exists
     after = None
-    if have and min(have) <= since:
+    if have and min(have) <= since and len(have) > 100:
         after = (dt.date.today() - dt.timedelta(days=120)).isoformat() + "T00:00:00"
     for page in range(1, max_pages + 1):
         posts = _nso_api_page(page, after)
@@ -226,9 +284,11 @@ def refresh_nso_cpi(since="2018-01", max_pages=15):
             if not per or per < since:
                 continue
             vals = parse_release(_text(x.get("content", {}).get("rendered", "")), per)
-            if vals.get("cpi_yoy") is None:
+            if vals.get("cpi_yoy") is None and vals.get("cpi_mom") is None:
                 continue
             old = have.get(per)
+            if old and old.get("cpi_yoy") not in (None, "") and vals.get("cpi_yoy") is None:
+                continue  # never replace a stated y/y with a m/m-only post
             if old and old.get("published", "") > x["date"]:
                 continue  # keep the latest publication for a month
             have[per] = dict(period=per, title=title, source_url=x["link"], published=x["date"], **vals)
@@ -236,7 +296,7 @@ def refresh_nso_cpi(since="2018-01", max_pages=15):
     _fill_from_socioeconomic_reports(have, since)
     if not have:
         raise FetchError("Không đọc được thông cáo CPI từ nso.gov.vn")
-    rows = [have[k] for k in sorted(have)]
+    rows = derive_yoy([have[k] for k in sorted(have)])
     store.write_csv(p, rows, NSO_COLS)
     return rows[-1]["period"]
 

@@ -99,7 +99,10 @@ def refresh_cpi():
         n = nso.get(per)
         if n:
             v = float(n["cpi_yoy"])
-            r = _mk(per, v, "% so cùng kỳ", "Cục Thống kê (NSO) – thông cáo tháng", n["source_url"])
+            src = "Cục Thống kê (NSO) – thông cáo tháng"
+            if n.get("yoy_method"):
+                src = "Cục Thống kê (NSO) – " + n["yoy_method"]
+            r = _mk(per, v, "% so cùng kỳ", src, n["source_url"])
             if per in imf_by:
                 r.update(xcheck_value=round(imf_by[per], 2), xcheck_source="IMF (CPI tháng)",
                          xcheck="OK" if abs(imf_by[per] - v) <= 0.1 else "LECH")

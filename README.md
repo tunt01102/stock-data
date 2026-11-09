@@ -98,12 +98,12 @@ Key chỉ được lưu trên máy bạn và chỉ gửi tới nhà cung cấp A
 |---|---|---|
 | Giá cổ phiếu, VN-Index | VNDirect | SSI, VPS, CafeF, DNSE |
 | Báo cáo tài chính theo quý | VNDirect | – |
-| Lạm phát (CPI) | **Cục Thống kê** (nso.gov.vn), thông cáo hằng tháng | IMF, World Bank |
+| Lạm phát (CPI) | **Cục Thống kê** (nso.gov.vn), thông cáo hằng tháng – đủ 106/106 tháng từ 2018 | IMF, World Bank |
 | Lãi suất điều hành, liên ngân hàng | **Ngân hàng Nhà nước** (sbv.gov.vn) | bảng các quyết định điều chỉnh từ 2018 |
-| Tỷ giá | **Ngân hàng Nhà nước** (tỷ giá trung tâm) | IMF, World Bank, Vietcombank |
+| Tỷ giá | **Ngân hàng Nhà nước** (tỷ giá trung tâm hằng ngày từ 2018) | IMF, World Bank, Vietcombank |
 | GDP | **Cục Thống kê** (thông cáo quý) | World Bank |
-| Giá vàng | SJC (qua webgia.com), giá thế giới (IMF) | Chỉ số giá vàng của Cục Thống kê |
-| Văn bản pháp luật | Cổng thông tin Chính phủ / Công báo (khi có), LuatVietnam | – |
+| Giá vàng | **Chỉ số giá vàng của Cục Thống kê** | Giá vàng miếng SJC (qua webgia.com), giá thế giới (IMF) |
+| Văn bản pháp luật | Cổng văn bản Chính phủ, Công báo, Bộ Tư pháp | LuatVietnam (bản tham khảo) |
 
 Mỗi số liệu trong ứng dụng có link bấm được tới nguồn gốc. Nhãn **OK** nghĩa là các nguồn khớp nhau, **LECH** là có chênh lệch (bấm vào để xem chi tiết).
 
