@@ -178,7 +178,58 @@ const vlinePlugin = {
   },
 };
 Chart.register(vlinePlugin);
-function xTicks(n = 8) { return { maxTicksLimit: n, autoSkip: true, maxRotation: 0, callback(v) { const l = this.getLabelForValue(v); return l && l.length === 10 ? dmy(l).slice(3) : l; } }; }
+/* Time-axis ticks that ALWAYS include the first and the last point (Chart.js autoSkip
+   otherwise drops the latest date, e.g. the 2026 end of an "All" range). Long ranges get one
+   tick at the start of each year; short ranges get evenly spaced ticks. Works for labels like
+   "2026-11-09", "2026-11" and "2026-Q3". */
+function yearOf(l) {
+  l = String(l ?? "");
+  const q = l.match(/^Q\d\/(\d{2})$/);          // "Q3/25" (quarterly financials)
+  return q ? "20" + q[1] : l.slice(0, 4);
+}
+function pickTicks(labels, maxN) {
+  const n = labels.length;
+  if (n <= 1) return n ? [0] : [];
+  const years = new Set(labels.map(yearOf));
+  let idx = [];
+  if (years.size >= 3) {
+    for (let i = 1; i < n; i++) if (yearOf(labels[i]) !== yearOf(labels[i - 1])) idx.push(i);
+    const step = Math.ceil(idx.length / Math.max(1, maxN - 1));
+    idx = idx.filter((_, k) => k % step === 0);
+  } else {
+    const k = Math.min(maxN, n) - 1;
+    for (let j = 0; j <= k; j++) idx.push(Math.round(j * (n - 1) / k));
+  }
+  idx.unshift(0); idx.push(n - 1);
+  idx = [...new Set(idx)].sort((a, b) => a - b);
+  // drop a tick that sits too close to the first/last one so labels don't overlap
+  const gap = (n - 1) / (maxN * 1.6);
+  return idx.filter((v, i) => i === 0 || i === idx.length - 1 || (v - idx[0] > gap && idx[idx.length - 1] - v > gap));
+}
+function tickLabel(l, yearMode, isEdge) {
+  l = String(l ?? "");
+  if (l.length === 10) return yearMode && !isEdge ? l.slice(0, 4) : dmy(l).slice(3);   // mm/yyyy
+  if (/^\d{4}-\d{2}$/.test(l)) return yearMode && !isEdge ? l.slice(0, 4) : l.slice(5) + "/" + l.slice(0, 4);
+  if (/^\d{4}-Q\d$/.test(l)) return yearMode && !isEdge ? l.slice(0, 4) : l;
+  return l;
+}
+function timeAxis(maxN = 8) {
+  return {
+    grid: { display: false },
+    afterBuildTicks(axis) {
+      const labels = axis.chart.data.labels || [];
+      axis.ticks = pickTicks(labels, maxN).map(v => ({ value: v }));
+    },
+    ticks: {
+      autoSkip: false, maxRotation: 0,
+      callback(v, i, ticks) {
+        const labels = this.chart.data.labels || [];
+        const yearMode = new Set(labels.map(yearOf)).size >= 3;
+        return tickLabel(labels[v], yearMode, i === 0 || i === ticks.length - 1);
+      },
+    },
+  };
+}
 
 /* ================= OVERVIEW ================= */
 const OV_COLS = [
@@ -330,10 +381,10 @@ function drawStock() {
   ];
   if ($("#stRaw").checked) ds.push({ label: LANG === "vi" ? "Giá đóng cửa gốc" : "Close (raw)", data: sliceRange(P.close.map(Number), N), borderColor: C[3], borderDash: [5, 3] });
   mkChart("cPrice", { type: "line", data: { labels: lab, datasets: ds },
-    options: { scales: { x: { ticks: xTicks(10), grid: { display: false } }, y: { title: { display: true, text: LANG === "vi" ? "nghìn đồng" : "thousand VND" } } },
+    options: { scales: { x: timeAxis(10), y: { title: { display: true, text: LANG === "vi" ? "nghìn đồng" : "thousand VND" } } },
       plugins: { vline: { label: meta.listed, text: "HOSE" }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y)}` } } } } });
   mkChart("cVol", { type: "bar", data: { labels: lab, datasets: [{ label: t("chart_volume"), data: sliceRange(P.volume.map(Number), N), backgroundColor: C[0], borderRadius: 0 }] },
-    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => num(c.parsed.y, 0) } } }, scales: { x: { ticks: xTicks(6), grid: { display: false } }, y: { ticks: { callback: v => num(v / 1e6, 1) + "M" } } } } });
+    options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => num(c.parsed.y, 0) } } }, scales: { x: timeAxis(6), y: { ticks: { callback: v => num(v / 1e6, 1) + "M" } } } } });
   // relative to index
   const idx = Object.fromEntries(d.index.date.map((x, i) => [x, +d.index.close[i]]));
   const lab2 = lab.filter(x => idx[x]); const a0 = adj[dates.indexOf(lab2[0])], i0 = idx[lab2[0]];
@@ -341,7 +392,7 @@ function drawStock() {
   mkChart("cRel", { type: "line", data: { labels: lab2, datasets: [
     { label: meta.ticker, data: lab2.map(x => 100 * amap[x] / a0), borderColor: C[0] },
     { label: "VN-Index", data: lab2.map(x => 100 * idx[x] / i0), borderColor: C[1] }] },
-    options: { scales: { x: { ticks: xTicks(6), grid: { display: false } } }, plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}` } } } } });
+    options: { scales: { x: timeAxis(6) }, plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}` } } } } });
   drawFund();
   drawXcheck();
   $("#stAI").classList.toggle("hidden", !(S.settings && S.settings.configured.length));
@@ -363,7 +414,7 @@ function drawFund() {
     mkChart("cf_" + k, { type: "bar", data: { labels: labs, datasets: [{ label: t(l), data: vals,
       backgroundColor: vals.map(v => v != null && v < 0 ? css("--s8") : C[0]), borderRadius: 2, maxBarThickness: 18 }] },
       options: { plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => num(c.parsed.y, k === "eps" || k === "ta" ? 0 : 2) } } },
-        scales: { x: { ticks: { maxTicksLimit: 9, maxRotation: 0 }, grid: { display: false } } } } });
+        scales: { x: timeAxis(7) } } });
   });
   const cols = [["fiscal_date", "Quý", null], ["total_assets", t("col_ta"), "bn"], ["liabilities", LANG === "vi" ? "Nợ phải trả (tỷ)" : "Liabilities (bn)", "bn"],
     ["equity", LANG === "vi" ? "Vốn CSH (tỷ)" : "Equity (bn)", "bn"], ["cash", LANG === "vi" ? "Tiền (tỷ)" : "Cash (bn)", "bn"],
@@ -402,7 +453,7 @@ async function renderCompare() {
     return { label: tk, data: lab.map(d => m[d] ? 100 * m[d] / base : null), borderColor: C[i], spanGaps: true };
   });
   mkChart("cCmp", { type: "line", data: { labels: lab, datasets: ds },
-    options: { scales: { x: { ticks: xTicks(10), grid: { display: false } } }, plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}` } } } } });
+    options: { scales: { x: timeAxis(10) }, plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, 1)}` } } } } });
   const rows = S.overview.tickers.filter(r => S.cmp.includes(r.ticker));
   const cols = [["col_ticker", r => `<b>${r.ticker}</b>`], ["col_close", r => num(r.metrics.close)], ["m_1y", r => pct(r.metrics.chg_1y)], ["m_cagr", r => pct(r.metrics.cagr)],
     ["m_vol", r => num(r.metrics.volatility, 1) + "%"], ["m_mdd", r => pct(r.metrics.max_drawdown)], ["m_beta", r => num(r.metrics.beta_1y, 2)],
@@ -482,7 +533,7 @@ async function renderMacro() {
       `<div class="chartbox"><canvas id="cm_gold2"></canvas></div><p class="caption">${t("gold_idx_note")}</p>` +
       `<p class="caption">${t("gold_prem_note")}</p><p class="caption">${t("source")}: ${link(M.links.imf_pcps, "IMF Primary Commodity Prices")} · ${link(M.links.webgia, "webgia.com")} (${LANG === "vi" ? "dẫn nguồn" : "citing"} ${link(M.links.sjc, "SJC")})${goldL && goldL.xcheck_source ? " · " + esc(goldL.xcheck_source) : ""}</p>`),
   ].join("");
-  const opt = (unit, d = 1) => ({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, d)}${unit}` } } }, scales: { x: { ticks: { maxTicksLimit: 8, maxRotation: 0 }, grid: { display: false } } } });
+  const opt = (unit, d = 1) => ({ plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${num(c.parsed.y, d)}${unit}` } } }, scales: { x: timeAxis(7) } });
   mkChart("cm_cpi", { type: "line", data: { labels: M.cpi.map(r => r.period), datasets: [{ label: "CPI YoY", data: M.cpi.map(r => +r.value), borderColor: C[0] }] }, options: opt("%", 2) });
   // step chart of SBV rates over monthly timeline
   const months = []; for (let y = 2018; y <= +today.slice(0, 4); y++) for (let m = 1; m <= 12; m++) { const p = `${y}-${String(m).padStart(2, "0")}`; if (p <= today.slice(0, 7)) months.push(p); }
