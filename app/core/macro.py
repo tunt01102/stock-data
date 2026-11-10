@@ -158,14 +158,18 @@ def refresh_fx():
                 r.update(xcheck_value=round(imf[per], 1), xcheck_source="IMF (tỷ giá chính thức bình quân tháng)",
                          xcheck="OK" if abs(imf[per] / v - 1) <= 0.01 else "LECH")
         else:
-            r = _mk(per, imf[per], "VND/USD (bình quân tháng)", "IMF (số liệu gốc: NHNN)", LINKS["imf_er"])
+            # NHNN did not publish central-rate notices for this month in its public data:
+            # keep the official series empty and show IMF only as the cross-check value.
+            r = _mk(per, None, "VND/USD", "NHNN không công bố tháng này (chỉ có số đối chiếu IMF)",
+                    LINKS["sbv_fx_hist"], xcheck_value=round(imf[per], 1),
+                    xcheck_source="IMF (số liệu NHNN báo cáo)", xcheck="NA")
         rows.append(r)
     if not rows:
         raise FetchError("Không có số liệu tỷ giá từ NHNN hoặc IMF")
     try:
         wb = _wb("PA.NUS.FCRF")
         for year, v in wb.items():
-            ms = [r["value"] for r in rows if r["period"].startswith(year)]
+            ms = [r["value"] for r in rows if r["period"].startswith(year) and r["value"] is not None]
             if len(ms) == 12:
                 avg = sum(ms) / 12
                 for r in rows:
@@ -200,7 +204,7 @@ def vcb_usd():
 # ------------------------------------------------------------------ Gold
 def refresh_gold():
     data = _imf("IMF.RES/PCPS", "G001.PGOLD.USD.M")
-    fx = {r["period"]: float(r["value"]) for r in store.read_csv(store.path("macro", "fx.csv"))}
+    fx = {r["period"]: float(r["value"]) for r in store.read_csv(store.path("macro", "fx.csv")) if r.get("value")}
     rows = []
     for r, p, v in sorted(data, key=lambda x: x[1]):
         if p < "%d-01" % START_YEAR:

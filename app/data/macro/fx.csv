@@ -83,9 +83,9 @@ period,value,unit,source,source_url,xcheck_value,xcheck_source,xcheck
 2024-10,24189.6316,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24192.5,IMF (tỷ giá chính thức bình quân tháng),OK
 2024-11,24280.4737,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24276.4,IMF (tỷ giá chính thức bình quân tháng),OK
 2024-12,24273.95,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24164.9,World Bank (bình quân năm 2024),OK
-2025-01,24336.1,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-02,24546.75,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
-2025-03,24787.92,VND/USD (bình quân tháng),IMF (số liệu gốc: NHNN),https://data.imf.org/en/datasets/IMF.STA:ER,,,NA
+2025-01,,VND/USD,NHNN không công bố tháng này (chỉ có số đối chiếu IMF),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24336.1,IMF (số liệu NHNN báo cáo),NA
+2025-02,,VND/USD,NHNN không công bố tháng này (chỉ có số đối chiếu IMF),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24546.8,IMF (số liệu NHNN báo cáo),NA
+2025-03,,VND/USD,NHNN không công bố tháng này (chỉ có số đối chiếu IMF),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24787.9,IMF (số liệu NHNN báo cáo),NA
 2025-04,24961.5,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24905.7,IMF (tỷ giá chính thức bình quân tháng),OK
 2025-05,24953.2857,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,24955.7,IMF (tỷ giá chính thức bình quân tháng),OK
 2025-06,25016.4737,VND/USD (bình quân tháng tỷ giá trung tâm),Ngân hàng Nhà nước (sbv.gov.vn),https://www.sbv.gov.vn/bieu-do-ty-gia-trung-tam,25009.9,IMF (tỷ giá chính thức bình quân tháng),OK
