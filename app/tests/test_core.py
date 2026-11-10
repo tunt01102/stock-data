@@ -374,6 +374,42 @@ class TestOfficialParsers(unittest.TestCase):
         self.assertEqual((f["date"], f["central_rate"], f["notice"]), ("2026-11-09", 25610.0, "464/TB-NHNN"))
 
 
+class TestAIProviders(TempData):
+    """Success-path parsing for each provider, using response shapes of the real APIs."""
+    def _ask(self, prov, response):
+        ai.save_settings({"keys": {prov: "test-key-1234"}, "provider": prov})
+        with mock.patch.object(ai, "post_json", return_value=response) as m:
+            text, model = ai.ask("Phân tích KDH", '{"x": 1}', prov, "vi")
+        return text, model, m.call_args
+
+    def test_claude(self):
+        text, model, call = self._ask("claude", {"content": [{"type": "thinking", "thinking": ""},
+                                                             {"type": "text", "text": "Xin chào"}],
+                                                 "stop_reason": "end_turn"})
+        self.assertEqual((text, model), ("Xin chào", "claude-opus-5-5"))
+        url, payload = call.args[0], call.args[1]
+        self.assertEqual(url, "https://api.anthropic.com/v1/messages")
+        self.assertEqual(call.kwargs["headers"]["x-api-key"], "test-key-1234")
+        self.assertIn("anthropic-version", call.kwargs["headers"])
+        self.assertIn("Phân tích KDH", payload["messages"][0]["content"])
+
+    def test_claude_refusal(self):
+        text, _, _ = self._ask("claude", {"content": [], "stop_reason": "refusal"})
+        self.assertIn("từ chối", text)
+
+    def test_openai(self):
+        text, model, call = self._ask("openai", {"choices": [{"message": {"content": "Trả lời"}}]})
+        self.assertEqual(text, "Trả lời")
+        self.assertEqual(call.args[0], "https://api.openai.com/v1/chat/completions")
+        self.assertEqual(call.kwargs["headers"]["Authorization"], "Bearer test-key-1234")
+
+    def test_gemini(self):
+        text, model, call = self._ask("gemini", {"candidates": [{"content": {"parts": [{"text": "A"}, {"text": "B"}]}}]})
+        self.assertEqual(text, "AB")
+        self.assertIn("generativelanguage.googleapis.com", call.args[0])
+        self.assertEqual(call.kwargs["headers"]["x-goog-api-key"], "test-key-1234")
+
+
 class TestSettings(TempData):
     def test_keys_masked_and_masked_value_ignored(self):
         ai.save_settings({"keys": {"claude": "sk-ant-secret-1234"}, "provider": "claude"})
